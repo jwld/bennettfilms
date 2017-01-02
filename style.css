@@ -1,0 +1,373 @@
+/*** GLOBALS ***/
+
+body {
+	margin: 0;
+	background-color: #111;
+}
+
+div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+/*	border: 1px solid white;*/
+}
+
+button {
+	border: none;
+	padding: 0;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: #aaa;
+}
+
+/*** RIBBONS ***/
+
+#topLeftRibbon {
+	position: fixed;
+	top: -100px;
+	left: -170px;
+	z-index: 3;
+	
+	height: 50px;
+	width: 500px;
+	transform: rotate(-20deg);
+	padding: 10px;
+	
+	color: white;
+	background-color: #222;
+	font: 17px other;
+	transition: top 0.2s;
+}
+
+#topLeftRibbon:hover {
+	color: gray;
+}
+
+#topRightRibbon {
+	position: fixed;
+	top: 20px;
+	right: -160px;
+	z-index: 3;
+	
+	width: 500px;
+	transform: rotate(20deg);
+	padding: 10px;
+	color: white;
+	background-color: #222;
+	transition: 0.2s;
+}
+
+#topRightRibbon:hover {
+	cursor: auto;
+}
+
+.ribbonIcon {
+	transform: rotate(-20deg);
+	margin: 3px;
+}
+
+.ribbonIcon:hover {
+	color: gray;
+}
+
+/*** NAV BAR ***/
+
+#headerBar, .divider {
+	background-color: #111;
+	height: 60px;
+	width: 100vw;
+	justify-content: center;
+	z-index: 2;
+	top: 0;
+	left: 0;
+}
+
+.divider {
+	color: white;
+	justify-content: flex-start;
+	padding: 0 20px;
+	font: 17px other;
+}
+
+.headerButton {
+	height: 100%;
+	width: auto;
+	color: white;
+	font: 17px other;
+	background-color: transparent;
+	margin: 0 20px;
+	border-bottom: 5px solid #111;
+	border-top: 5px solid #111;
+}
+
+.headerButton:hover {
+	border-bottom-color: #fc0;
+}
+
+.currentSection {
+	border-bottom-color: #fc0;
+}
+
+/*** SECTIONS ***/
+
+.section {
+	flex-direction: column;
+	height: calc(100vh - 60px);
+}
+
+.section.about, .section.contact, .section.ref {
+	background-color: #333;
+}
+
+/*** LANDING ***/
+
+.section.top {
+	height: 100vh;
+	justify-content: center;
+	background-color: #fc0;
+}
+
+#notHeader {
+	height: calc(100vh - 60px);
+	width: 100%;
+	overflow: hidden;
+	flex-direction: column;
+}
+
+#titleText {
+	color: #111;
+	font: 15vw main;
+	line-height: 10vw;
+	padding: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	transition: 0.2s;
+}
+
+#subtitleText {
+	color: white;
+	font: 5vw main;
+	background-color: #111;
+	padding: 20px 20px 15px 20px;
+	transform: rotate(5deg);
+	text-align: center;
+	margin-top: 20px;
+	transition: 0.2s;
+}
+
+/*** ABOUT ***/
+
+.section.about {
+	flex-direction: row;
+	padding: 3vw 20px;
+	flex-wrap: wrap;
+	height: auto;
+}
+
+#portrait {
+	min-height: 450px;
+	min-width: 350px;
+	background-color: #222;
+	margin: 20px 200px 20px 20px;
+	border: 10px solid #222;
+	box-shadow: 10px 10px #111;
+	
+	background-image: url("pics/bennett.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	transition: 0.5s;
+	opacity: 0;
+}
+
+#aboutText {
+	width: 500px;
+	margin: 0;
+	background-color: #222;
+	color: white;
+	padding: 20px;
+	margin: 20px 20px 30px 200px;
+	box-sizing: border-box;
+	font: 15px Chivo;
+	box-shadow: 10px 10px #111;
+	
+	transition: 0.5s;
+	opacity: 0;
+}
+
+/*** WORK ***/
+
+.section.work {
+	background-color: #333;
+	height: auto;
+	padding: 3vw 20px;
+	flex-direction: row;
+	flex-wrap: wrap;	
+}
+
+.videoButton {
+	position: relative;
+	overflow: hidden;
+	
+	height: 300px;
+	width: 400px;
+	margin: 10px;
+	border: 5px solid #222;
+	box-sizing: border-box;
+	
+	background-color: black;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	font-size: 40px;
+}
+
+.videoButton:hover {
+	border-color: white;
+}
+
+.videoTitle {
+	color: white;
+	font-family: main;
+	font-size: inherit;
+	background-color: rgba(30, 30, 30, 0.75);
+	height: 20%;
+}
+
+.videoBox {
+	position: absolute;
+	top: 0;
+	left: -390px;
+	
+	width: 390px;
+	height: 290px;
+	border: none;
+	background-color: black;
+	transition: 1s;
+}
+
+/*** REFERENCES ***/
+
+.section.ref {
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 3vw 20px;
+	height: auto;
+	align-items: flex-start;
+}
+
+.ref_box {
+	background-color: #222;
+	box-shadow: 10px 10px black;
+	flex-direction: column;
+	color: white;
+	width: 330px;
+	padding: 17px;
+	margin: 20px;
+	font: 15px Chivo;
+	justify-content: flex-start;
+}
+
+.nameWrap {
+/*	background-color: #0c9;*/
+	background-color: #fc0;
+	transform: rotate(2deg);
+	padding: 7px;
+	margin: 5px 0 -5px 0;
+}
+
+.ref_name {
+	font: 25px Chivo;
+	transform: rotate(-2deg);
+	color: #333;
+}
+
+.roleWrap {
+/*	background-color: #09c;*/
+	background-color: #444;
+	padding: 5px;
+	z-index: 1;
+	transform: rotate(-1deg);
+}
+
+.ref_role {
+	font: 15px Chivo;
+	color: white;
+/*	transform: rotate(1deg);*/
+}
+
+.ref_quote {
+	margin: 20px 0 0 0;
+	color: white;
+}
+
+/*** CONTACT ***/
+
+.section.contact {
+	height: auto;
+	padding: 3vw 20px;
+}
+
+#contactDetails {
+	flex-wrap: wrap;
+}
+
+.contactInfo {
+	color: white;
+	font: 25px Chivo;
+	margin: 20px;
+	background-color: #222;
+	padding: 10px;
+}
+
+.contactUnderline {
+	width: 100px;
+	height: 10px;
+	background-color: green;
+}
+
+.contactInfo.words {
+	font-size: 17px;
+}
+
+/*** FONTS ***/
+
+@font-face {
+	font-family: main;
+	src: url("fonts/zerocalcare.ttf");
+}
+
+@font-face {
+	font-family: other;
+	src: url("fonts/KGHAPPY_solid.ttf");
+}
+
+@font-face {
+	font-family: Chivo;
+	src: url("fonts/Chivo-Regular.ttf");
+}
+
+@font-face {
+	font-family: SugarPunch;
+	src: url("fonts/sugarpunch.otf");
+}
+
+@font-face {
+	font-family: Charlatan;
+	src: url("fonts/Charlatan.otf");
+}
