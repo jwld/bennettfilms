@@ -125,6 +125,28 @@ a:hover {
 	border-bottom-color: #fc0;
 }
 
+#portraitLayout {
+	display: none;
+	width: 100%;
+	justify-content: space-between;
+	padding: 0 17px;
+}
+
+.ribbonIcon.bar {
+	transform: none;	
+}
+
+#menuButton {
+	background-color: transparent;
+}
+
+.menuIconBar {
+	width: 35px;
+	height: 5px;
+	background-color: white;
+	margin: 6px 0;
+}
+
 /*** SECTIONS ***/
 
 .section {
@@ -145,7 +167,7 @@ a:hover {
 }
 
 #notHeader {
-	height: calc(100vh - 60px);
+	flex-grow: 1;
 	width: 100%;
 	overflow: hidden;
 	flex-direction: column;
@@ -373,4 +395,71 @@ a:hover {
 @font-face {
 	font-family: Charlatan;
 	src: url("fonts/Charlatan.otf");
+}
+
+/*** MOBILE LAYOUT ***/
+
+@media (orientation: portrait) {
+	#topRightRibbon, #topLeftRibbon, #landscapeLayout {
+		display: none;
+	}
+	
+	#portraitLayout {
+		display: flex;
+	}
+	
+	#titleText {
+		font: 30vw main;
+	}
+	
+	.ribbonIcon {
+		margin: 0 0 0 10px;
+	}
+}
+
+/*** MOBILE MENU ***/
+
+#mobileMenuFull {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 4;
+	
+	flex-direction: column;
+	background-color: #111;
+
+	transition: 0.2s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+#closeWrapper {
+	width: 100vw;
+	justify-content: flex-end;
+}
+
+#closeButton {
+	background-color: transparent;
+	color: white;
+	font-size: 100px;
+
+	align-items: center;
+	vertical-align: center;
+	
+	margin: 10px;
+	width: 70px;
+	line-height: 50px;
+	padding-bottom: 20px;
+}
+
+#buttonPanel {
+	flex-grow: 1;
+	flex-direction: column;
+}
+
+.headerButton.mobile {
+	font-size: 45px;
+	margin: 30px;
 }

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<button id="topLeftRibbon" onclick="jumpTo('top')">BENNETT FILMS</button>
+	<button id="topLeftRibbon" onclick="jumpTo('top', false)">BENNETT FILMS</button>
 	<button id="topRightRibbon">
 		<a class="fa fa-vimeo-square ribbonIcon" style="font-size:30px;" target="_blank" href="https://vimeo.com/user10087339"></a>
 		<a class="fa fa-linkedin-square ribbonIcon" style="font-size:30px;" target="_blank" href="https://www.linkedin.com/in/jack-bennett-85028a51"></a>
@@ -20,17 +20,47 @@
 		<a class="fa fa-envelope-square ribbonIcon" style="font-size:30px;" href="mailto:jack@bennettfilms.co.uk"></a>
 	</button>
 	
+	<!-- MOBILE MENU -->
+	<div id="mobileMenuFull">
+		<div id="closeWrapper">
+			<button id="closeButton" onclick="jumpTo(null, true)">&times;</button>
+		</div>
+		<div id="buttonPanel">
+			<button class="headerButton mobile about" onclick="jumpTo('about', true)">ABOUT</button>
+			<button class="headerButton mobile work" onclick="jumpTo('work', true)">WORK</button>
+			<button class="headerButton mobile ref" onclick="jumpTo('ref', true)">REFERENCES</button>
+			<button class="headerButton mobile contact" onclick="jumpTo('contact', true)">CONTACT</button>
+		</div>
+	</div>
+	
 	<!-- LANDING -->
 	<div class="section top">
+		<div id="mobileHeader"></div>
 		<div id="notHeader">
 			<span id="titleText">BENNETT FILMS</span>
 			<span id="subtitleText">2D ANIMATOR + DIRECTOR</span>
 		</div>
 		<div id="headerBar">
-			<button class="headerButton about" onclick="jumpTo('about')">ABOUT</button>
-			<button class="headerButton work" onclick="jumpTo('work')">WORK</button>
-			<button class="headerButton ref" onclick="jumpTo('ref')">REFERENCES</button>
-			<button class="headerButton contact" onclick="jumpTo('contact')">CONTACT</button>
+			<div id="landscapeLayout">
+				<button class="headerButton about" onclick="jumpTo('about', false)">ABOUT</button>
+				<button class="headerButton work" onclick="jumpTo('work', false)">WORK</button>
+				<button class="headerButton ref" onclick="jumpTo('ref', false)">REFERENCES</button>
+				<button class="headerButton contact" onclick="jumpTo('contact', false)">CONTACT</button>
+			</div>
+			<div id="portraitLayout">
+				<button id="menuButton" onclick="openMobileMenu()">
+					<div class="menuIconBar"></div>
+					<div class="menuIconBar"></div>
+					<div class="menuIconBar"></div>
+				</button>
+				<div>
+					<a class="fa fa-vimeo-square ribbonIcon bar" style="font-size:35px;" target="_blank" href="https://vimeo.com/user10087339"></a>
+					<a class="fa fa-linkedin-square ribbonIcon bar" style="font-size:35px;" target="_blank" href="https://www.linkedin.com/in/jack-bennett-85028a51"></a>
+					<a class="fa fa-twitter-square ribbonIcon bar" style="font-size:35px;" target="_blank" href="https://twitter.com/jackbennettfilm"></a>
+					<a class="fa fa-instagram ribbonIcon bar" style="font-size:35px;" target="_blank" href="https://www.instagram.com/jackbennett139/"></a>
+					<a class="fa fa-envelope-square ribbonIcon bar" style="font-size:35px;" href="mailto:jack@bennettfilms.co.uk"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 	
@@ -159,7 +189,7 @@
 		<span class="contactInfo words">Please don't hesitate to get in touch with me if you have any questions!</span>
 		<div id="contactDetails">
 			<a class="contactInfo" href="mailto:jack@bennettfilms.co.uk?subject=Hello">jack@bennettfilms.co.uk</a>
-			<span class="contactInfo">07815176520</span>
+			<span class="contactInfo">0781 5176520</span>
 		</div>
 	</div>
 	<div class="divider"></div>

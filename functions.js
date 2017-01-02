@@ -9,7 +9,7 @@ $(document).scroll(function() {
 	}
 	
 	// show top left ribbon
-	if ($(window).scrollTop() >= (window.innerHeight * 0.5) - 60) {
+	if ($(window).scrollTop() >= (window.innerHeight) - 60) {
 		$("#topLeftRibbon").css("top", "15px");
 	} else {
 		$("#topLeftRibbon").css("top", "-100px");
@@ -26,19 +26,27 @@ $(document).scroll(function() {
 });
 
 // scroll to div
-function jumpTo(dest) {
-	var target = ".section." + dest;
-	$("body").animate({
-		scrollTop: $(target).offset().top - 60
-	}, 500);
+function jumpTo(dest, mobile) {
+	if (dest !== null) {
+		var target = ".section." + dest;
+		$("body").animate({
+			scrollTop: $(target).offset().top - 60
+		}, 500);
 	
-	// add underlines to header bar buttons
-	if (activeSection != "") {
-		$(".headerButton." + activeSection).removeClass("currentSection");
+		// add underlines to header bar buttons
+		if (activeSection != "") {
+			$(".headerButton." + activeSection).removeClass("currentSection");
+		}
+	
+		$(".headerButton." + dest).addClass("currentSection");
+		activeSection = dest;
 	}
 	
-	$(".headerButton." + dest).addClass("currentSection");
-	activeSection = dest;
+	// close menu on mobile
+	if (mobile) {
+		$("#mobileMenuFull").css("opacity", "0");
+		$("#mobileMenuFull").css("pointer-events", "none");
+	}
 }
 
 // slide video in from left
@@ -47,4 +55,10 @@ function playVideo(url, box) {
 	setTimeout(function() {
 		$(box.childNodes[3]).attr("src", "https://player.vimeo.com/video/" + url + "?title=0&byline=0&portrait=0");
 	}, 1000);
+}
+
+// mobile menu
+function openMobileMenu() {
+	$("#mobileMenuFull").css("opacity", "1");
+	$("#mobileMenuFull").css("pointer-events", "auto");
 }
