@@ -99,8 +99,11 @@ a:hover {
 .divider {
 	color: white;
 	justify-content: flex-start;
-	padding: 0 20px;
 	font: 17px other;
+}
+
+.dividerTitle {
+	margin-left: 20px;
 }
 
 .headerButton {
