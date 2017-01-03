@@ -1,5 +1,5 @@
 $(document).scroll(function() {
-	if (window.innerHeight < window.innerWidth) {
+	if (window.innerHeight < window.innerWidth || window.innerWidth >= 1024) {
 		// fix header bar when scrolling past it
 		if ($(window).scrollTop() >= window.innerHeight - 60) {
 			$("#headerBar").css("position", "fixed");

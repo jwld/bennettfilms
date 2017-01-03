@@ -40,7 +40,7 @@ a:hover {
 	position: fixed;
 	top: -100px;
 	left: -170px;
-	z-index: 3;
+	z-index: 5;
 	
 	height: 50px;
 	width: 500px;
@@ -61,7 +61,7 @@ a:hover {
 	position: fixed;
 	top: 20px;
 	right: -160px;
-	z-index: 3;
+	z-index: 5;
 	
 	width: 500px;
 	transform: rotate(20deg);
