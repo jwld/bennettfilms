@@ -22,9 +22,6 @@
 	
 	<!-- MOBILE MENU -->
 	<div id="mobileMenuFull">
-		<div id="closeWrapper">
-			<button id="closeButton" onclick="jumpTo(null, true)">&times;</button>
-		</div>
 		<div id="buttonPanel">
 			<button class="headerButton mobile top" onclick="jumpTo('top', false)">TOP</button>
 			<button class="headerButton mobile about" onclick="jumpTo('about', true)">ABOUT</button>
@@ -48,10 +45,10 @@
 				<button class="headerButton contact" onclick="jumpTo('contact', false)">CONTACT</button>
 			</div>
 			<div id="portraitLayout">
-				<button id="menuButton" onclick="openMobileMenu()">
-					<div class="menuIconBar"></div>
-					<div class="menuIconBar"></div>
-					<div class="menuIconBar"></div>
+				<button id="menuButton" onclick="toggleMobileMenu(this)">
+					<div class="menuIconBar one"></div>
+					<div class="menuIconBar two"></div>
+					<div class="menuIconBar three"></div>
 				</button>
 				<div>
 					<a class="fa fa-vimeo-square ribbonIcon bar" style="font-size:35px;" target="_blank" href="https://vimeo.com/user10087339"></a>
@@ -193,11 +190,11 @@
 			<span class="contactInfo">0781 5176520</span>
 		</div>
 	</div>
-	<div class="divider">
+	<!-- <div class="divider">
 		<a class="fa fa-vimeo-square ribbonIcon bar" style="font-size:35px;" target="_blank" href="https://vimeo.com/user10087339"></a>
 		<a class="fa fa-linkedin-square ribbonIcon bar" style="font-size:35px;" target="_blank" href="https://www.linkedin.com/in/jack-bennett-85028a51"></a>
 		<a class="fa fa-twitter-square ribbonIcon bar" style="font-size:35px;" target="_blank" href="https://twitter.com/jackbennettfilm"></a>
 		<a class="fa fa-instagram ribbonIcon bar" style="font-size:35px;" target="_blank" href="https://www.instagram.com/jackbennett139/"></a>
 		<a class="fa fa-envelope-square ribbonIcon bar" style="font-size:35px;" href="mailto:jack@bennettfilms.co.uk"></a>
-	</div>
+	</div> -->
 </body>

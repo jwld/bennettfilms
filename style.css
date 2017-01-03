@@ -130,6 +130,8 @@ a:hover {
 	border-bottom-color: #fc0;
 }
 
+/*** PORTRAIT NAV BAR ***/
+
 #portraitLayout {
 	display: none;
 	width: 100%;
@@ -137,19 +139,36 @@ a:hover {
 	padding: 0 16px;
 }
 
-.ribbonIcon.bar {
-	transform: none;	
-}
-
 #menuButton {
 	background-color: transparent;
+}
+
+#menuButton:hover .menuIconBar {
+	background-color: gray;
 }
 
 .menuIconBar {
 	width: 35px;
 	height: 5px;
-	background-color: white;
 	margin: 6px 0;
+	background-color: white;
+	transition: 0.5s;
+}
+
+.menuIconBar.one.change {
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.menuIconBar.two.change {
+	opacity: 0;
+}
+
+.menuIconBar.three.change {
+	transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.ribbonIcon.bar {
+	transform: none;	
 }
 
 /*** SECTIONS ***/
@@ -402,12 +421,12 @@ a:hover {
 /*** MOBILE MENU ***/
 
 #mobileMenuFull {
-	height: 100vh;
+	height: calc(100vh - 60px);
 	width: 100vw;
 	position: fixed;
-	top: 0;
+	bottom: 0;
 	right: 0;
-	z-index: 4;
+	z-index: 3;
 	
 	flex-direction: column;
 	background-color: #111;
@@ -415,29 +434,7 @@ a:hover {
 	transition: 0.2s;
 	opacity: 0;
 	pointer-events: none;
-}
-
-#closeWrapper {
-	width: 100vw;
-	justify-content: flex-end;
-}
-
-#closeButton {
-	background-color: transparent;
-	color: white;
-	font-size: 100px;
-
-	align-items: center;
-	vertical-align: center;
-	
-	margin: 10px;
-	width: 70px;
-	line-height: 50px;
-	padding-bottom: 20px;
-}
-
-#closeButton:active {
-	color: gray;
+	display: none;
 }
 
 #buttonPanel {
@@ -446,7 +443,7 @@ a:hover {
 }
 
 .headerButton.mobile {
-	font-size: 45px;
+	font-size: 5vw;
 	margin: 30px;
 }
 
@@ -455,6 +452,10 @@ a:hover {
 @media (orientation: portrait) {
 	#topRightRibbon, #topLeftRibbon, #landscapeLayout {
 		display: none;
+	}
+	
+	#mobileMenuFull {
+		display: flex;
 	}
 	
 	#portraitLayout {

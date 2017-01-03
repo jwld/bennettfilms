@@ -60,7 +60,18 @@ function playVideo(url, box) {
 }
 
 // mobile menu
-function openMobileMenu() {
-	$("#mobileMenuFull").css("opacity", "1");
-	$("#mobileMenuFull").css("pointer-events", "auto");
+function toggleMobileMenu(x) {
+	if ($("#mobileMenuFull").css("opacity") == 0) {
+		$("#mobileMenuFull").css("opacity", "1");
+		$("#mobileMenuFull").css("pointer-events", "auto");
+		
+		// animate menu button
+		$(".menuIconBar").addClass("change");
+	} else {
+		$("#mobileMenuFull").css("opacity", "0");
+		$("#mobileMenuFull").css("pointer-events", "none");
+		
+		// animate menu button
+		$(".menuIconBar").removeClass("change");
+	}
 }
