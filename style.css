@@ -263,7 +263,7 @@ a:hover {
 .section.work {
 	background-color: #333;
 	height: auto;
-	padding: 3vw 20px;
+	padding: 3vw 10px;
 	flex-direction: row;
 	flex-wrap: wrap;	
 }
@@ -486,5 +486,11 @@ a:hover {
 	
 	.dividerTitle {
 		display: flex;
+	}
+}
+
+@media (max-width: 440px) {
+	.videoButton {
+		height: calc((100vw - 40px) * 0.75);
 	}
 }

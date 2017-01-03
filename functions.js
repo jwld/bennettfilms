@@ -1,5 +1,3 @@
-var activeSection = "";
-
 $(document).scroll(function() {
 	if (window.innerHeight < window.innerWidth) {
 		// fix header bar when scrolling past it
@@ -34,20 +32,21 @@ function jumpTo(dest, mobile) {
 		$("body").animate({
 			scrollTop: $(target).offset().top - 60
 		}, 500);
-	
-		// add underlines to header bar buttons
-		if (activeSection != "") {
-			$(".headerButton." + activeSection).removeClass("currentSection");
-		}
-	
-		$(".headerButton." + dest).addClass("currentSection");
-		activeSection = dest;
+
+		// // add underlines to header bar buttons
+		// if (activeSection != "") {
+		// 	$(".headerButton." + activeSection).removeClass("currentSection");
+		// }
+
+		// $(".headerButton." + dest).addClass("currentSection");
+		// activeSection = dest;
 	}
 	
 	// close menu on mobile
 	if (mobile) {
 		$("#mobileMenuFull").css("opacity", "0");
 		$("#mobileMenuFull").css("pointer-events", "none");
+		$(".menuIconBar").removeClass("change");
 	}
 }
 
