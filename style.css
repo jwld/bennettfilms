@@ -126,10 +126,6 @@ a:hover {
 	border-bottom-color: #fc0;
 }
 
-.currentSection {
-	border-bottom-color: #fc0;
-}
-
 /*** PORTRAIT NAV BAR ***/
 
 #portraitLayout {
@@ -303,8 +299,8 @@ a:hover {
 	top: 0;
 	left: -390px;
 	
-	width: 390px;
-	height: 290px;
+	height: 100%;
+	width: 100%;
 	border: none;
 	background-color: black;
 	transition: 1s;
@@ -376,19 +372,33 @@ a:hover {
 .contactInfo {
 	color: white;
 	font: 25px Chivo;
-	margin: 20px;
 	background-color: #222;
 	padding: 10px;
 }
 
-.contactUnderline {
-	width: 100px;
-	height: 10px;
-	background-color: green;
-}
-
 .contactInfo.words {
 	font-size: 17px;
+}
+
+.contactInfoWrap {
+	flex-direction: column;
+	margin: 20px;
+}
+
+.contactInfo:hover {
+	color: white;
+}
+
+.contactInfoWrap:hover .contactBar {
+	width: 100%;
+}
+
+.contactBar {
+	width: 0;
+	transition: 0.5s;
+	height: 5px;
+	background-color: #fc0;
+	transform: rotate(-1deg) translateY(-7px);
 }
 
 /*** FONTS ***/
@@ -489,6 +499,7 @@ a:hover {
 	}
 }
 
+/* Adjust videos when squashed */
 @media (max-width: 440px) {
 	.videoButton {
 		height: calc((100vw - 40px) * 0.75);

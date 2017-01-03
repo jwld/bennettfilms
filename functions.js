@@ -32,14 +32,6 @@ function jumpTo(dest, mobile) {
 		$("body").animate({
 			scrollTop: $(target).offset().top - 60
 		}, 500);
-
-		// // add underlines to header bar buttons
-		// if (activeSection != "") {
-		// 	$(".headerButton." + activeSection).removeClass("currentSection");
-		// }
-
-		// $(".headerButton." + dest).addClass("currentSection");
-		// activeSection = dest;
 	}
 	
 	// close menu on mobile
