@@ -383,6 +383,7 @@ a:hover {
 .contactInfoWrap {
 	flex-direction: column;
 	margin: 20px;
+	pointer-events: none;
 }
 
 .contactInfo:hover {
