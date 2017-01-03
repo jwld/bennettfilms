@@ -91,7 +91,7 @@ a:hover {
 	height: 60px;
 	width: 100vw;
 	justify-content: center;
-	z-index: 2;
+	z-index: 4;
 	top: 0;
 	left: 0;
 }
@@ -440,7 +440,6 @@ a:hover {
 	right: 0;
 	z-index: 3;
 	
-	
 	flex-direction: column;
 	background-color: #111;
 
@@ -453,6 +452,7 @@ a:hover {
 .headerButton.mobile {
 	font: 10vw main;
 	margin: 3vw;
+	height: 5vh;
 }
 
 /*** MOBILE LAYOUT ***/
