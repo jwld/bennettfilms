@@ -1,27 +1,29 @@
 var activeSection = "";
 
 $(document).scroll(function() {
-	// fix header bar when scrolling past it
-	if ($(window).scrollTop() >= window.innerHeight - 60) {
-		$("#headerBar").css("position", "fixed");
-	} else {
-		$("#headerBar").css("position", "static");
-	}
+	if (window.innerHeight < window.innerWidth) {
+		// fix header bar when scrolling past it
+		if ($(window).scrollTop() >= window.innerHeight - 60) {
+			$("#headerBar").css("position", "fixed");
+		} else {
+			$("#headerBar").css("position", "static");
+		}
 	
-	// show top left ribbon
-	if ($(window).scrollTop() >= (window.innerHeight) - 60) {
-		$("#topLeftRibbon").css("top", "15px");
-	} else {
-		$("#topLeftRibbon").css("top", "-100px");
-	}
+		// show top left ribbon
+		if ($(window).scrollTop() >= (window.innerHeight) - 60) {
+			$("#topLeftRibbon").css("top", "15px");
+		} else {
+			$("#topLeftRibbon").css("top", "-100px");
+		}
 	
-	// fade section.about in
-	if ($(window).scrollTop() >= $(".section.about").offset().top - (window.innerHeight * 0.5)) {
-		$("#portrait").css("opacity", "1");
-		$("#portrait").css("margin", "20px");
+		// fade section.about in
+		if ($(window).scrollTop() >= $(".section.about").offset().top - (window.innerHeight * 0.5)) {
+			$("#portrait").css("opacity", "1");
+			$("#portrait").css("margin", "20px");
 		
-		$("#aboutText").css("opacity", "1");
-		$("#aboutText").css("margin", "20px 20px 30px 20px");
+			$("#aboutText").css("opacity", "1");
+			$("#aboutText").css("margin", "20px 20px 30px 20px");
+		}
 	}
 });
 

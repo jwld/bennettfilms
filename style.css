@@ -98,12 +98,17 @@ a:hover {
 
 .divider {
 	color: white;
-	justify-content: flex-start;
 	font: 17px other;
 }
 
+.divider.about {
+	display: none;
+}
+
 .dividerTitle {
-	margin-left: 20px;
+/*	margin-left: 67px;*/
+	display: none;
+/*	z-index: 3;*/
 }
 
 .headerButton {
@@ -129,7 +134,7 @@ a:hover {
 	display: none;
 	width: 100%;
 	justify-content: space-between;
-	padding: 0 17px;
+	padding: 0 16px;
 }
 
 .ribbonIcon.bar {
@@ -175,8 +180,8 @@ a:hover {
 
 #titleText {
 	color: #111;
-	font: 15vw main;
-	line-height: 10vw;
+	font: 30vmin main;
+	line-height: 17vmin;
 	padding: 20px;
 	text-align: center;
 	margin-bottom: 20px;
@@ -185,9 +190,9 @@ a:hover {
 
 #subtitleText {
 	color: white;
-	font: 5vw main;
+	font: 10vmin main;
 	background-color: #111;
-	padding: 20px 20px 15px 20px;
+	padding: 2vmin 2vmin 1.5vmin 2vmin;
 	transform: rotate(5deg);
 	text-align: center;
 	margin-top: 20px;
@@ -309,7 +314,6 @@ a:hover {
 }
 
 .nameWrap {
-/*	background-color: #0c9;*/
 	background-color: #fc0;
 	transform: rotate(2deg);
 	padding: 7px;
@@ -323,7 +327,6 @@ a:hover {
 }
 
 .roleWrap {
-/*	background-color: #09c;*/
 	background-color: #444;
 	padding: 5px;
 	z-index: 1;
@@ -333,7 +336,6 @@ a:hover {
 .ref_role {
 	font: 15px Chivo;
 	color: white;
-/*	transform: rotate(1deg);*/
 }
 
 .ref_quote {
@@ -397,26 +399,6 @@ a:hover {
 	src: url("fonts/Charlatan.otf");
 }
 
-/*** MOBILE LAYOUT ***/
-
-@media (orientation: portrait) {
-	#topRightRibbon, #topLeftRibbon, #landscapeLayout {
-		display: none;
-	}
-	
-	#portraitLayout {
-		display: flex;
-	}
-	
-	#titleText {
-		font: 30vw main;
-	}
-	
-	.ribbonIcon {
-		margin: 0 0 0 10px;
-	}
-}
-
 /*** MOBILE MENU ***/
 
 #mobileMenuFull {
@@ -466,4 +448,42 @@ a:hover {
 .headerButton.mobile {
 	font-size: 45px;
 	margin: 30px;
+}
+
+/*** MOBILE LAYOUT ***/
+
+@media (orientation: portrait) {
+	#topRightRibbon, #topLeftRibbon, #landscapeLayout {
+		display: none;
+	}
+	
+	#portraitLayout {
+		display: flex;
+	}
+	
+	.ribbonIcon {
+		margin: 0 0 0 10px;
+	}
+	
+	#headerBar {
+		position: fixed !important;
+	}
+	
+	#portrait {
+		opacity: 1;
+		margin: 20px;
+	}
+	
+	#aboutText {
+		opacity: 1;
+		margin: 20px 20px 30px 20px;
+	}
+	
+	.divider.about {
+		display: flex;
+	}
+	
+	.dividerTitle {
+		display: flex;
+	}
 }
