@@ -66,3 +66,10 @@ function toggleMobileMenu(x) {
 		$(".menuIconBar").removeClass("change");
 	}
 }
+
+// fixes having to double click links on phones / tablets
+$('a').on('click touchend', function(e) {
+    var el = $(this);
+    var link = el.attr('href');
+    window.location = link;
+});
