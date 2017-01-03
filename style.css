@@ -452,13 +452,12 @@ a:hover {
 #buttonPanel {
 	flex-grow: 1;
 	flex-direction: column;
-	background-color: white;
 }
 
 .headerButton.mobile {
 	font: 10vw main;
 	margin: 3vw;
-	color: black;
+	display: flex;
 }
 
 /*** MOBILE LAYOUT ***/
