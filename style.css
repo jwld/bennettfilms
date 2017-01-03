@@ -149,7 +149,7 @@ a:hover {
 	height: 5px;
 	margin: 6px 0;
 	background-color: white;
-	transition: 0.5s;
+	transition: 0.5s transform;
 }
 
 .menuIconBar.one.change {
@@ -452,6 +452,7 @@ a:hover {
 #buttonPanel {
 	flex-grow: 1;
 	flex-direction: column;
+	background-color: white;
 }
 
 .headerButton.mobile {
