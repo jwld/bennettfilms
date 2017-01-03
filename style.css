@@ -458,6 +458,7 @@ a:hover {
 .headerButton.mobile {
 	font: 10vw main;
 	margin: 3vw;
+	color: black;
 }
 
 /*** MOBILE LAYOUT ***/
