@@ -462,7 +462,7 @@ a:hover {
 
 /*** MOBILE LAYOUT ***/
 
-@media (max-width: 1010px) {
+@media (max-width: 1020px) {
 	#topRightRibbon, #topLeftRibbon, #landscapeLayout {
 		display: none;
 	}
