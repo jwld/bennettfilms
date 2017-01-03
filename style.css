@@ -378,16 +378,16 @@ a:hover {
 
 .contactInfo.words {
 	font-size: 17px;
-}
-
-.contactInfoWrap {
-	flex-direction: column;
-	margin: 20px;
-	pointer-events: none;
+	margin: 10px;
 }
 
 .contactInfo:hover {
 	color: white;
+}
+
+.contactInfoWrap {
+	flex-direction: column;
+	margin: 10px;
 }
 
 .contactInfoWrap:hover .contactBar {
