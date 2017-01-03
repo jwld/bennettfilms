@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-	color: #aaa;
+	color: gray;
 }
 
 /*** RIBBONS ***/
@@ -455,7 +455,7 @@ a:hover {
 
 .headerButton.mobile {
 	font-size: 5vw;
-	margin: 30px;
+	margin: 3vw;
 }
 
 /*** MOBILE LAYOUT ***/
