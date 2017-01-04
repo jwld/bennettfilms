@@ -1,3 +1,4 @@
+// only runs on desktop browswers
 $(document).scroll(function() {
 	if (window.innerHeight < window.innerWidth || window.innerWidth >= 1024) {
 		// fix header bar when scrolling past it
@@ -13,14 +14,27 @@ $(document).scroll(function() {
 		} else {
 			$("#topLeftRibbon").css("top", "-100px");
 		}
-	
+		
+		// fade sections in as user scrolls page
+		var scrollBottom = $(window).scrollTop() + $(window).height();
+		
 		// fade section.about in
-		if ($(window).scrollTop() >= $(".section.about").offset().top - (window.innerHeight * 0.5)) {
+		if (scrollBottom >= $(".section.about").offset().top + 200) {
 			$("#portrait").css("opacity", "1");
 			$("#portrait").css("margin", "20px");
 		
 			$("#aboutText").css("opacity", "1");
 			$("#aboutText").css("margin", "20px 20px 30px 20px");
+		}
+		
+		// fade section.work in
+		if (scrollBottom >= $(".section.work").offset().top + 200) {
+			$(".videoButton").css("opacity", "1");
+		}
+		
+		// fade section.ref in
+		if (scrollBottom >= $(".section.ref").offset().top + 200) {
+			$(".ref_box").css("opacity", "1");
 		}
 	}
 });

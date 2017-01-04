@@ -279,8 +279,9 @@ a:hover {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	
-	font-size: 40px;
+		
+	transition: 0.5s;
+	opacity: 0;
 }
 
 .videoButton:hover {
@@ -289,8 +290,7 @@ a:hover {
 
 .videoTitle {
 	color: white;
-	font-family: main;
-	font-size: inherit;
+	font: 40px main;
 	background-color: rgba(30, 30, 30, 0.75);
 	height: 20%;
 }
@@ -327,6 +327,9 @@ a:hover {
 	margin: 20px;
 	font: 15px Chivo;
 	justify-content: flex-start;
+	
+	transition: 0.5s;
+	opacity: 0;
 }
 
 .nameWrap {
@@ -401,6 +404,15 @@ a:hover {
 	height: 5px;
 	background-color: #fc0;
 	transform: rotate(-1deg) translateY(-7px);
+}
+
+/*** SIGNATURE ***/
+
+.divider.sig {
+	color: white;
+	font: 15px Chivo;
+	padding: 0 20px;
+	justify-content: flex-start;
 }
 
 /*** FONTS ***/
@@ -478,6 +490,14 @@ a:hover {
 		position: fixed !important;
 	}
 	
+	.divider.about {
+		display: flex;
+	}
+	
+	.dividerTitle {
+		display: flex;
+	}
+	
 	#portrait {
 		opacity: 1;
 		margin: 20px;
@@ -488,12 +508,12 @@ a:hover {
 		margin: 20px 20px 30px 20px;
 	}
 	
-	.divider.about {
-		display: flex;
+	.videoButton {
+		opacity: 1;
 	}
 	
-	.dividerTitle {
-		display: flex;
+	.refBox {
+		opacity: 1;
 	}
 }
 
