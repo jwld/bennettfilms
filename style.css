@@ -127,7 +127,7 @@ a:hover {
 	color: #f29787;
 }
 
-/*** PORTRAIT NAV BAR ***/
+/*** PHONE / TABLET NAV BAR ***/
 
 #portraitLayout {
 	display: none;
@@ -186,7 +186,8 @@ a:hover {
 	justify-content: center;
 	background-color: #fc0;
 	background-image: url("pics/landing1.png");
-	background-size: contain;
+	background-size: cover;
+	background-position: center bottom;
 }
 
 #notHeader {
