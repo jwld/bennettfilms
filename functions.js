@@ -24,7 +24,7 @@ $(document).scroll(function() {
 			$("#portrait").css("margin", "20px");
 		
 			$("#aboutText").css("opacity", "1");
-			$("#aboutText").css("margin", "20px 20px 30px 20px");
+			$("#aboutText").css("margin", "20px");
 		}
 		
 		// fade section.work in
