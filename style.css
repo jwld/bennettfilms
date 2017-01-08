@@ -358,7 +358,7 @@ a:hover {
 /*** CONTACT ***/
 
 .section.contact {
-	height: auto;
+	height: 50vh;
 	padding: 3vw 20px;
 }
 
