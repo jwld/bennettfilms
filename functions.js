@@ -58,8 +58,6 @@ function jumpTo(dest, mobile) {
 
 // slide video in from left
 function playVideo(url, box) {
-	console.log($(box.childNodes));
-	
 	$(box.childNodes[5]).css("left", "0px");
 	setTimeout(function() {
 		$(box.childNodes[5]).attr("src", "https://player.vimeo.com/video/" + url + "?title=0&byline=0&portrait=0");
