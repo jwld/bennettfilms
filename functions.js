@@ -58,9 +58,11 @@ function jumpTo(dest, mobile) {
 
 // slide video in from left
 function playVideo(url, box) {
-	$(box.childNodes[3]).css("left", "0px");
+	console.log($(box.childNodes));
+	
+	$(box.childNodes[5]).css("left", "0px");
 	setTimeout(function() {
-		$(box.childNodes[3]).attr("src", "https://player.vimeo.com/video/" + url + "?title=0&byline=0&portrait=0");
+		$(box.childNodes[5]).attr("src", "https://player.vimeo.com/video/" + url + "?title=0&byline=0&portrait=0");
 	}, 1000);
 }
 
