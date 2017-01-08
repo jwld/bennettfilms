@@ -32,6 +32,7 @@ a {
 
 a:hover {
 	color: #f29787;
+	cursor: pointer;
 }
 
 /*** RIBBONS ***/
@@ -221,7 +222,7 @@ a:hover {
 
 .section.about {
 	flex-direction: row;
-	padding: 3vw 20px;
+	padding: 3vw 10px;
 	flex-wrap: wrap;
 	height: auto;
 }
@@ -244,7 +245,7 @@ a:hover {
 	width: 600px;
 	margin: 0;
 	color: black;
-	margin: 20px 20px 20px 200px;
+	margin: 10px 10px 10px 200px;
 	box-sizing: border-box;
 	font: 15px Chivo;
 	
@@ -320,7 +321,7 @@ a:hover {
 .section.ref {
 	flex-direction: row;
 	flex-wrap: wrap;
-	padding: 3vw 20px;
+	padding: 3vw 10px;
 	height: auto;
 	align-items: flex-start;
 }
@@ -371,7 +372,7 @@ a:hover {
 
 .section.contact {
 	height: 50vh;
-	padding: 3vw 20px;
+	padding: 3vw 10px;
 }
 
 #contactDetails {
@@ -380,35 +381,40 @@ a:hover {
 
 .contactInfo {
 	color: black;
-	font: 25px Chivo;
-/*	background-color: #222;*/
-/*	padding: 10px;*/
+	font-family: Chivo;
 }
 
 .contactInfo.words {
-	font-size: 17px;
-	margin: 10px;
+	font-size: 19px;
+	margin: 20px 10px;
+	background-color: #e6e6e6;
+	padding: 10px;
 }
 
-.contactInfo:hover {
-	color: white;
+.contactInfo.link {
+	font-size: 25px;
+	z-index: 1;
+	margin-left: 12px;
 }
 
-.contactInfoWrap {
-	flex-direction: column;
-	margin: 10px;
-}
-
-.contactInfoWrap:hover .contactBar {
-	width: 100%;
+.contactInfo.link:hover {
+	color: #f29787;
 }
 
 .contactBar {
-	width: 0;
+	width: 100%;
 	transition: 0.5s;
 	height: 5px;
-	background-color: #fc0;
+	background-color: #f29787;
 	transform: rotate(-1deg) translateY(-7px);
+}
+
+.contactGroup {
+	margin: 20px;
+}
+
+.contactIcon {
+	color: #719698;
 }
 
 /*** SIGNATURE ***/
@@ -431,23 +437,8 @@ a:hover {
 }
 
 @font-face {
-	font-family: other;
-	src: url("fonts/KGHAPPY_solid.ttf");
-}
-
-@font-face {
 	font-family: Chivo;
 	src: url("fonts/Chivo-Regular.ttf");
-}
-
-@font-face {
-	font-family: SugarPunch;
-	src: url("fonts/sugarpunch.otf");
-}
-
-@font-face {
-	font-family: Charlatan;
-	src: url("fonts/Charlatan.otf");
 }
 
 /*** MOBILE MENU ***/
@@ -513,7 +504,7 @@ a:hover {
 	
 	#aboutText {
 		opacity: 1;
-		margin: 20px 20px 30px 20px;
+		margin: 0 15px 20px 15px;
 	}
 	
 	.videoButton {
@@ -529,5 +520,11 @@ a:hover {
 @media (max-width: 440px) {
 	.videoButton {
 		height: calc((100vw - 40px) * 0.5625);
+	}
+}
+
+@media (max-width: 500px) {
+	.ref_box {
+		margin: 10px;
 	}
 }
