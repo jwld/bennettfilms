@@ -326,7 +326,7 @@ a:hover {
 }
 
 .nameWrap {
-	background-color: #f29787;
+	background-color: #719698;
 	transform: rotate(2deg);
 	padding: 7px;
 	margin: 5px 0 -5px 0;
@@ -335,7 +335,7 @@ a:hover {
 .ref_name {
 	font: 25px Chivo;
 	transform: rotate(-2deg);
-	color: black;
+	color: white;
 }
 
 .roleWrap {
