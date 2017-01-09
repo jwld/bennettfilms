@@ -174,9 +174,6 @@ a:hover {
 .section {
 	flex-direction: column;
 	height: calc(100vh - 60px);
-}
-
-.section.about, .section.work, .section.contact, .section.ref {
 	background-color: #f0f5f5;
 }
 
@@ -242,7 +239,7 @@ a:hover {
 }
 
 #aboutText {
-	width: 600px;
+	width: 400px;
 	margin: 0;
 	color: black;
 	margin: 10px 10px 10px 200px;
@@ -461,7 +458,7 @@ a:hover {
 }
 
 .headerButton.mobile {
-	font: 10vw main;
+	font: 8vmin main;
 	margin: 3vw;
 	height: 5vh;
 }
