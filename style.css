@@ -87,19 +87,36 @@ a:hover {
 
 /*** NAV BAR ***/
 
-#headerBar, .divider {
+#headerBar {
 	background-color: #111;
 	height: 60px;
 	width: 100vw;
-	justify-content: center;
 	z-index: 4;
 	top: 0;
 	left: 0;
 }
 
-.divider {
+.headerButton {
+	height: 100%;
+	width: auto;
 	color: white;
 	font: 40px main;
+	background-color: transparent;
+	margin: 0 20px;
+}
+
+.headerButton:hover {
+	color: #f29787;
+}
+
+/*** DIVIDERS ***/
+
+.divider {
+	width: 100vw;
+	height: 60px;
+	font: 40px main;
+	color: white;
+	background-color: #111;
 }
 
 .divider.about {
@@ -110,22 +127,6 @@ a:hover {
 /*	margin-left: 67px;*/
 	display: none;
 /*	z-index: 3;*/
-}
-
-.headerButton {
-	height: 100%;
-	width: auto;
-	color: white;
-	font: 40px main;
-	background-color: transparent;
-	margin: 0 20px;
-/*	border-bottom: 5px solid #111;*/
-/*	border-top: 5px solid #111;*/
-}
-
-.headerButton:hover {
-/*	border-bottom-color: #fc0;*/
-	color: #f29787;
 }
 
 /*** PHONE / TABLET NAV BAR ***/
@@ -416,10 +417,12 @@ a:hover {
 
 /*** SIGNATURE ***/
 
-.divider.sig {
+.footer {
 	color: white;
 	font: 15px Chivo;
 	justify-content: flex-start;
+	height: 60px;
+	width: 100vw;
 }
 
 #sigWords {
