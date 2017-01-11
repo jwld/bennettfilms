@@ -124,9 +124,7 @@ a:hover {
 }
 
 .dividerTitle {
-/*	margin-left: 67px;*/
 	display: none;
-/*	z-index: 3;*/
 }
 
 /*** PHONE / TABLET NAV BAR ***/
@@ -256,8 +254,13 @@ a:hover {
 .section.work {
 	height: auto;
 	padding: 3vw 10px;
+}
+
+#videosWrap {
 	flex-direction: row;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
+	max-width: calc(100vw - 20px);
+	transition: 0.2s linear;
 }
 
 .videoButton {
