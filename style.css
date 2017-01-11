@@ -397,15 +397,13 @@ p {
 }
 
 .videoButton:hover .videoImage {
-	transform: scale(1.06);
+	transform: scale(1.05);
 }
 
 .videoImage {
 	height: 100%;
 	width: 100%;
 	transition: 0.2s;
-	transform: scale(1.02);
-	
 	
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -723,4 +721,12 @@ p {
   	#subtitleText {
 		padding: 0.5vmin 2vmin 0 2vmin;
   	}
+	
+	.videoImage {
+		transform: scale(1.02);
+	}
+	
+	.videoButton:hover .videoImage {
+		transform: scale(1.08);
+	}
 }
