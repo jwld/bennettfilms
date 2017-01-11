@@ -233,9 +233,8 @@ p {
 
 #landingVideo {
 	position: absolute;
-	min-height: calc(100% - 40px);
-	min-width: 100%;
-	bottom: 40px;
+	height: calc(100% - 50px);
+	bottom: 50px;
 	
 	z-index: 1;
 	background-color: black;
@@ -690,5 +689,13 @@ p {
 	.headerButton.mobile {
 		font: 13vw Zero;
 		margin: 5vw;
+	}
+}
+
+/* Adjust landing video so that it always covers screen */
+@media (min-aspect-ratio: 1670/887) {
+	#landingVideo {
+		height: auto;
+		width: 100%;
 	}
 }
