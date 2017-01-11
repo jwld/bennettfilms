@@ -598,7 +598,7 @@ p {
 }
 
 .headerButton.mobile {
-	font: 8vmin Zero;
+	font: 8vw Zero;
 	margin: 3vw;
 	height: 5vh;
 }
@@ -683,5 +683,12 @@ p {
 @media (max-width: 500px) {
 	.ref_box {
 		margin: 10px;
+	}
+}
+
+@media (max-width: 600px) {
+	.headerButton.mobile {
+		font: 13vw Zero;
+		margin: 5vw;
 	}
 }
