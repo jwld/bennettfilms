@@ -704,3 +704,23 @@ p {
 		width: 100%;
 	}
 }
+
+
+
+
+
+
+
+
+
+/*** BROWSER-SPECIFIC CSS ***/
+
+@-moz-document url-prefix() { 
+ 	#blogButton {
+		padding: 0;
+ 	}
+  
+  	#subtitleText {
+		padding: 0.5vmin 2vmin 0 2vmin;
+  	}
+}
