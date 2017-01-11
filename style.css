@@ -37,6 +37,7 @@ a:hover {
 
 p {
 	margin: 6px 0;
+	white-space: pre-wrap;
 }
 
 /*** RIBBONS ***/
@@ -451,7 +452,7 @@ p {
 .ref_box {
 	flex-direction: column;
 	width: 330px;
-	padding: 17px;
+	padding: 17px 17px 11px 17px;
 	margin: 10px 20px;
 	font: 15px Chivo;
 	justify-content: flex-start;
@@ -486,6 +487,7 @@ p {
 }
 
 .ref_quote {
+	flex-direction: column;
 	margin: 20px 0 0 0;
 	color: black;
 }
