@@ -18,14 +18,14 @@ $(document).scroll(function() {
 		// fade sections in as user scrolls page
 		var scrollBottom = $(window).scrollTop() + $(window).height();
 		
-		// fade section.about in
-		if (scrollBottom >= $(".section.about").offset().top + 200) {
-			$("#portrait").css("opacity", "1");
-			$("#portrait").css("margin", "10px 20px 10px 10px");
-		
-			$("#aboutText").css("opacity", "1");
-			$("#aboutText").css("margin", "10px 10px 10px 20px");
-		}
+		// // fade section.about in
+// 		if (scrollBottom >= $(".section.about").offset().top + 200) {
+// 			$("#portrait").css("opacity", "1");
+// 			$("#portrait").css("margin", "10px 20px 10px 10px");
+//
+// 			$("#introWrap").css("opacity", "1");
+// 			$("#introWrap").css("margin-left", 0);
+// 		}
 		
 		// fade section.work in
 		if (scrollBottom >= $(".section.work").offset().top + 200) {
@@ -78,5 +78,18 @@ function toggleMobileMenu(x) {
 		
 		// animate menu button
 		$(".menuIconBar").removeClass("change");
+	}
+}
+
+// open and close blog
+function toggleBlog() {
+	if ($("#blogWrap").css("height") == "0px") {
+		$("#blogWrap").css("height", "auto");
+		$("#blogWrap").css("margin-top", "30px");
+		$("#blogButton").html("CLOSE BLOG");
+	} else {
+		$("#blogWrap").css("height", 0);
+		$("#blogWrap").css("margin", 0);
+		$("#blogButton").html("READ BLOG");
 	}
 }
