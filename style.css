@@ -669,7 +669,7 @@ p {
 	}
 	
 	#landingVideo {
-		bottom: 0;
+		display: none;
 	}
 }
 
