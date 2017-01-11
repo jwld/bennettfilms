@@ -37,6 +37,7 @@ a:hover {
 
 p {
 	margin: 6px 0;
+	width: 100%;
 }
 
 /*** RIBBONS ***/
@@ -237,7 +238,6 @@ p {
 	height: calc(100% - 50px);
 	bottom: 50px;
 	left: 0;
-	
 	z-index: 1;
 	background-color: #f0f5f5;
 }
@@ -401,8 +401,8 @@ p {
 }
 
 .videoImage {
-	height: 102%;
-	width: 102%;
+	height: 105%;
+	width: 105%;
 	transition: 0.2s;
 	
 	background-size: cover;
