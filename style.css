@@ -397,13 +397,15 @@ p {
 }
 
 .videoButton:hover .videoImage {
-	transform: scale(1.05);
+	transform: scale(1.06);
 }
 
 .videoImage {
-	height: 105%;
-	width: 105%;
+	height: 100%;
+	width: 100%;
 	transition: 0.2s;
+	transform: scale(1.02);
+	
 	
 	background-size: cover;
 	background-repeat: no-repeat;
