@@ -293,7 +293,7 @@ p {
 }
 
 #aboutText {
-	display: inline;
+	display: block;
 	color: black;
 	width: 100%;
 	margin: 10px;
@@ -564,7 +564,7 @@ p {
 }
 
 .ref_quote {
-	display: inline;
+	display: block;
 	margin: 20px 0 0 0;
 	color: black;
 	width: 100%;
@@ -572,6 +572,7 @@ p {
 
 .ref_quote p {
 	width: 100%;
+	margin: 10px 0;
 }
 
 
