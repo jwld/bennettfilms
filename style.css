@@ -37,7 +37,6 @@ a:hover {
 
 p {
 	margin: 6px 0;
-	white-space: normal;
 }
 
 /*** RIBBONS ***/
@@ -294,12 +293,12 @@ p {
 }
 
 #aboutText {
+	display: inline;
 	color: black;
 	width: 100%;
 	margin: 10px;
 	box-sizing: border-box;
 	font: 15px Chivo;
-	flex-direction: column;
 	margin: 0 0 10px 0;
 }
 
@@ -565,7 +564,7 @@ p {
 }
 
 .ref_quote {
-	flex-direction: column;
+	display: inline;
 	margin: 20px 0 0 0;
 	color: black;
 	width: 100%;
