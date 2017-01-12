@@ -303,6 +303,10 @@ p {
 	margin: 0 0 10px 0;
 }
 
+#aboutText p {
+	width: 100%;
+}
+
 #blogButton {
 	height: 30px;
 	width: 100%;
@@ -564,6 +568,10 @@ p {
 	flex-direction: column;
 	margin: 20px 0 0 0;
 	color: black;
+	width: 100%;
+}
+
+.ref_quote p {
 	width: 100%;
 }
 
