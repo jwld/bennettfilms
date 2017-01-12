@@ -37,7 +37,6 @@ a:hover {
 
 p {
 	margin: 6px 0;
-	flex-shrink: 1;
 }
 
 /*** RIBBONS ***/
@@ -301,10 +300,12 @@ p {
 	font: 15px Chivo;
 	flex-direction: column;
 	margin: 0 0 10px 0;
+	flex: 0 1 auto;
 }
 
 #aboutText p {
 	width: 100%;
+	flex: 0 1 auto;
 }
 
 #blogButton {
