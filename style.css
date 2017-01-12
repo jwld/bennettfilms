@@ -37,7 +37,6 @@ a:hover {
 
 p {
 	margin: 6px 0;
-	width: 100%;
 }
 
 /*** RIBBONS ***/
@@ -246,6 +245,9 @@ p {
 
 
 
+
+
+
 /*** ABOUT ***/
 
 .section.about {
@@ -281,7 +283,7 @@ p {
 
 #introWrap {
 	flex-direction: column;
-	max-width: 500px;
+	max-width: 400px;
 	margin: 0 0 0 20px;
 	
 	transition: 0.5s;
@@ -317,7 +319,7 @@ p {
 
 #blogWrap {
 	flex-direction: column;
-	max-width: 840px;
+	max-width: 740px;
 	overflow: hidden;
 
 	margin: 0;
@@ -328,6 +330,7 @@ p {
 	flex-direction: column;
 	margin-top: 20px;
 	font: 15px Chivo;
+	width: 100%;
 }
 
 .blogPost.top {
@@ -358,6 +361,7 @@ p {
 
 .blogPost p {
 	margin: 10px 0 0 0;
+	width: 100%;
 }
 
 
