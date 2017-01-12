@@ -37,7 +37,7 @@ a:hover {
 
 p {
 	margin: 6px 0;
-	width: 100%;
+	flex-shrink: 1;
 }
 
 /*** RIBBONS ***/
