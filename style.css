@@ -467,13 +467,6 @@ p {
 	position: relative;
 }
 
-#navButtons {
-	position: absolute;
-	width: 750px;
-	max-width: calc(100vw - 40px);
-	justify-content: space-between;
-}
-
 .galleryButton {
 	height: 50px;
 	width: 50px;
@@ -486,6 +479,28 @@ p {
 
 .galleryButton:hover {
 	background-color: #d6d6d6;
+}
+
+.innerGalleryButton {
+	position: absolute;
+	height: 100%;
+	width: 50px;
+	background-color: rgba(214, 214, 214, 0.9);
+	color: #719698;
+	top: 0;
+	display: none !important;
+}
+
+.innerGalleryButton:hover {
+	background-color: #c6c6c6;
+}
+
+.innerGalleryButton.left {
+	left: 0;
+}
+
+.innerGalleryButton.right {
+	right: 0;
 }
 
 
@@ -726,6 +741,17 @@ p {
 	
 	#landingVideo {
 		display: none;
+	}
+	
+	
+	
+	
+	.galleryButton {
+		display: none !important;
+	}
+	
+	.innerGalleryButton {
+		display: inline !important;
 	}
 	
 	#galleryTitle {
