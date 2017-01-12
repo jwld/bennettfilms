@@ -302,13 +302,13 @@ p {
 }
 
 #aboutText p {
-	max-width: 400px;
+	max-width: 400px; /* has to be px and not % for IE */
 }
 
 #blogButton {
 	height: 30px;
 	width: 100%;
-	padding: 8px;
+	padding-top: 2px;
 	
 	font: 30px Zero;
 	color: #719698;
@@ -570,7 +570,7 @@ p {
 }
 
 .ref_quote p {
-	max-width: 330px;
+	max-width: 330px; /* has to be px and not % for IE */
 }
 
 
@@ -809,11 +809,7 @@ p {
 
 /*** BROWSER-SPECIFIC CSS ***/
 
-@-moz-document url-prefix() { 
- 	#blogButton {
-		padding: 0;
- 	}
-  
+@-moz-document url-prefix() {   
   	#subtitleText {
 		padding: 0.5vmin 2vmin 0 2vmin;
   	}
