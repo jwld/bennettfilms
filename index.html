@@ -61,7 +61,7 @@
 	</div>
 	
 	<!-- ABOUT -->
-	<div class="divider about"><p class="dividerTitle">ABOUT<p></div>
+	<div class="divider about"><span class="dividerTitle">ABOUT</span></div>
 	<div class="section about">
 		<div id="aboutSectionWrap">
 			<div id="aboutTopWrap">
@@ -86,14 +86,14 @@
 						<div class="blogDivider"></div>
 						<div class="blogDate">Jan 1, 2017</div>
 					</div>
-					<p>WMy short film, <i>Not the End of the World<i> is complete! Coming soon(maybe not that soon though)</p>
+					<p>WMy short film, <i>Not the End of the World</i> is complete! Coming soon(maybe not that soon though)</p>
 				</div>
 			</div>
 		</div>
 	</div>
 	
 	<!-- WORK -->
-	<div class="divider"><p class="dividerTitle">WORK<p></div>
+	<div class="divider"><span class="dividerTitle">WORK</span></div>
 	<div class="section work">
 		<div id="videosWrap">
 			<button class="videoButton" onclick="playVideo('168037976', this)">
@@ -172,10 +172,20 @@
 				<iframe class="videoBox" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</button>
 		</div>
+		<div id="drawingsWrap">
+			<span id="galleryTitle">DRAWINGS</span>
+			<div id="imageGalleryWrap">
+				<div id="sketchWrap" style="background-image: url('pics/sketches/sketch0.png');"></div>
+				<div id="navButtons">
+					<button class="material-icons galleryButton left" style="font-size:35px;" onclick="changePic('prev')">keyboard_arrow_left</button>
+					<button class="material-icons galleryButton right" style="font-size:35px;" onclick="changePic('next')">keyboard_arrow_right</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	
 	<!-- REFERENCES -->
-	<div class="divider"><p class="dividerTitle">REFERENCES<p></div>
+	<div class="divider"><span class="dividerTitle">REFERENCES</span></div>
 	<div class="section ref">
 		<div class="ref_box">
 			<div class="nameWrap"><span class="ref_name">Rob O'Neil</span></div>
@@ -232,7 +242,7 @@
 	</div>
 	
 	<!-- CONTACT -->
-	<div class="divider"><p class="dividerTitle">CONTACT<p></div>
+	<div class="divider"><span class="dividerTitle">CONTACT</span></div>
 	<div class="section contact">
 		<span class="contactInfo words">Please don't hesitate to get in touch with me if you have any questions!</span>
 		<div id="contactDetails">
@@ -248,5 +258,5 @@
 	</div>
 	
 	<!-- SIGNATURE -->
-	<div class="footer"><p id="sigWords">Website by&nbsp;</p><a href="mailto:jwldcode@gmail.com">Jack Davies</a></div>
+	<div class="footer"><span id="sigWords">Website by&nbsp;</span><a href="mailto:jwldcode@gmail.com">Jack Davies</a></div>
 </body>

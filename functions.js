@@ -93,3 +93,23 @@ function toggleBlog() {
 		$("#blogButton").html("READ BLOG");
 	}
 }
+
+// change pics in image gallery
+var currentPic = 0;
+var totalPics = 8;
+
+function changePic(dir) {
+	
+	if (dir == 'next') {
+		currentPic = modulo(currentPic + 1, totalPics);
+	} else {
+		currentPic = modulo(currentPic - 1, totalPics);
+	}
+	
+	$("#sketchWrap").css("background-image", "url('pics/sketches/sketch" + currentPic + ".png')");
+}
+
+// modulo for negative numbers
+function modulo(num, mod) {
+	return ((num % mod) + mod) % mod;
+}
