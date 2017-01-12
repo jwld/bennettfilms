@@ -37,6 +37,7 @@ a:hover {
 
 p {
 	margin: 6px 0;
+	white-space: normal;
 }
 
 /*** RIBBONS ***/
@@ -303,7 +304,7 @@ p {
 }
 
 #aboutText p {
-	max-width: 100%;
+	width: 100%;
 }
 
 #blogButton {
@@ -571,7 +572,7 @@ p {
 }
 
 .ref_quote p {
-	max-width: 100%;
+	width: 100%;
 }
 
 
