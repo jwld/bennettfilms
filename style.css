@@ -300,12 +300,10 @@ p {
 	font: 15px Chivo;
 	flex-direction: column;
 	margin: 0 0 10px 0;
-	flex: 0 1 auto;
 }
 
 #aboutText p {
 	width: 100%;
-	flex: 0 1 auto;
 }
 
 #blogButton {
@@ -530,7 +528,7 @@ p {
 
 .ref_box {
 	flex-direction: column;
-	width: 330px;
+	max-width: 330px;
 	padding: 17px 17px 11px 17px;
 	margin: 10px 20px;
 	font: 15px Chivo;
