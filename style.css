@@ -293,9 +293,8 @@ p {
 }
 
 #aboutText {
-	display: block;
 	color: black;
-	width: 100%;
+	max-width: 100%;
 	margin: 10px;
 	box-sizing: border-box;
 	font: 15px Chivo;
@@ -303,7 +302,7 @@ p {
 }
 
 #aboutText p {
-	width: 100%;
+	max-width: 100%;
 }
 
 #blogButton {
@@ -564,15 +563,14 @@ p {
 }
 
 .ref_quote {
-	display: block;
+	flex-direction: column;
 	margin: 20px 0 0 0;
 	color: black;
-	width: 100%;
+	max-width: 100%;
 }
 
 .ref_quote p {
-	width: 100%;
-	margin: 10px 0;
+	max-width: 100%;
 }
 
 
