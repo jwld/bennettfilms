@@ -485,10 +485,11 @@ p {
 	position: absolute;
 	height: 50px;
 	width: 50px;
-	background-color: rgba(214, 214, 214, 0.9);
+	background-color: #e6e6e6;
 	color: #719698;
-	top: 125px;
+	bottom: 0;
 	display: none !important;
+	border-top: 5px solid #f0f5f5;
 }
 
 .innerGalleryButton:hover {
@@ -497,10 +498,12 @@ p {
 
 .innerGalleryButton.left {
 	left: 0;
+	border-right: 5px solid #f0f5f5;
 }
 
 .innerGalleryButton.right {
 	right: 0;
+	border-left: 5px solid #f0f5f5;
 }
 
 
