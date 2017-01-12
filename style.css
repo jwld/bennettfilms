@@ -479,13 +479,13 @@ p {
 	width: 50px;
 	margin: 10px;
 	color: #719698;
-	background-color: #d6d6d6;
+	background-color: #e6e6e6;
 	z-index: 1;
 	border-radius: 5px;
 }
 
 .galleryButton:hover {
-	background-color: #c6c6c6;
+	background-color: #d6d6d6;
 }
 
 
