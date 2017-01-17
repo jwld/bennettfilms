@@ -539,6 +539,8 @@ p {
 	font: 40px Zero;
 	color: black;
 	background-color: #f0f5f5;
+	
+	pointer-events: none;
 }
 
 .videoChoiceButton:hover {

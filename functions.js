@@ -72,6 +72,7 @@ function playVideo(url, box) {
 // show choice of videos when required
 function showVideoOptions() {
 	$("#videoChoiceBox").css("opacity", 1);
+	$(".videoChoiceButton").css("pointer-events", "auto");
 }
 
 // mobile menu
