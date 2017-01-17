@@ -95,7 +95,7 @@ p {
 	background-color: #111;
 	height: 60px;
 	width: 100vw;
-	z-index: 4;
+	z-index: 10;
 	top: 0;
 	left: 0;
 }
@@ -142,7 +142,6 @@ p {
 	width: 100%;
 	justify-content: space-between;
 	padding: 0 16px;
-	z-index: 5;
 }
 
 #menuButton {
