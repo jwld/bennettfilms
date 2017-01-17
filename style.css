@@ -131,6 +131,10 @@ p {
 	display: none;
 }
 
+
+
+
+
 /*** PHONE / TABLET NAV BAR ***/
 
 #portraitLayout {
@@ -138,6 +142,7 @@ p {
 	width: 100%;
 	justify-content: space-between;
 	padding: 0 16px;
+	z-index: 5;
 }
 
 #menuButton {
@@ -703,7 +708,7 @@ p {
 	position: fixed;
 	bottom: 0;
 	right: 0;
-	z-index: 3;
+	z-index: 5;
 	
 	flex-direction: column;
 	background-color: #111;
