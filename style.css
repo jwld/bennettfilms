@@ -648,14 +648,6 @@ p {
 	color: #f29787;
 }
 
-.contactBar {
-	width: 100%;
-	transition: 0.5s;
-	height: 5px;
-	background-color: #f29787;
-	transform: rotate(-1deg) translateY(-7px);
-}
-
 .contactGroup {
 	margin: 20px;
 }
@@ -733,18 +725,17 @@ p {
 
 
 
-/*** MOBILE LAYOUT ***/
+/*** MOBILE & TABLET LAYOUT ***/
 
 @media (max-width: 1024px) {
+	
+	/* deactivate */
 	#topRightRibbon, #topLeftRibbon, #landscapeLayout {
 		display: none;
 	}
 	
-	#mobileMenuFull {
-		display: flex;
-	}
-	
-	#portraitLayout {
+	/* activate */
+	#mobileMenuFull, #portraitLayout, .divider.about, .dividerTitle {
 		display: flex;
 	}
 	
@@ -756,14 +747,6 @@ p {
 		position: fixed !important;
 	}
 	
-	.divider.about {
-		display: flex;
-	}
-	
-	.dividerTitle {
-		display: flex;
-	}
-	
 	#portrait {
 		opacity: 1;
 		margin: 20px 0;
@@ -773,15 +756,8 @@ p {
 		margin: 0;
 	}
 	
-	#aboutText {
-		opacity: 1;
-	}
-	
-	.videoButton {
-		opacity: 1;
-	}
-	
-	.ref_box {
+	/* set default opacity */
+	#aboutText, .videoButton, .ref_box {
 		opacity: 1;
 	}
 	
@@ -806,19 +782,21 @@ p {
 	}
 }
 
-/* Adjust videos when squashed */
+/* maintain video aspect ratio when squashed */
 @media (max-width: 440px) {
 	.videoButton {
 		height: calc((100vw - 40px) * 0.5625);
 	}
 }
 
+/* square box margins off below certain width */
 @media (max-width: 500px) {
 	.ref_box, #drawingsWrap {
 		margin: 10px;
 	}
 }
 
+/* adjust mobile menu font size below certain width */
 @media (max-width: 600px) {
 	.headerButton.mobile {
 		font: 13vw Zero;
@@ -844,6 +822,7 @@ p {
 
 /*** BROWSER-SPECIFIC CSS ***/
 
+/* firefox */
 @-moz-document url-prefix() {
   	#subtitleText {
 		padding: 0.5vmin 2vmin 0 2vmin;
