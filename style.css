@@ -432,7 +432,7 @@ p {
 	color: white;
 	font: 40px Zero;
 	background-color: rgba(30, 30, 30, 0.75);
-	z-index: 1;
+	z-index: 2;
 }
 
 .videoBox {
@@ -445,7 +445,7 @@ p {
 	border: none;
 	background-color: black;
 	transition: 1s;
-	z-index: 3;
+	z-index: 4;
 }
 
 #drawingsWrap {
@@ -520,7 +520,7 @@ p {
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 2;
+	z-index: 3;
 	
 	height: 100%;
 	width: 100%;
