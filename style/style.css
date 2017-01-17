@@ -203,7 +203,7 @@ p {
 	padding: 0;
 	justify-content: center;
 	
-	background-image: url("pics/landing1.png");
+	background-image: url("../pics/landing1.png");
 	background-size: cover;
 	background-position: center bottom;
 }
@@ -275,7 +275,7 @@ p {
 /*	margin: 20px 200px 20px 20px;*/
 	margin: 0 20px 0 0;
 	
-	background-image: url("pics/portrait.png");
+	background-image: url("../pics/portrait.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -684,12 +684,12 @@ p {
 
 @font-face {
 	font-family: Zero;
-	src: url("fonts/zerocalcare.ttf");
+	src: url("../fonts/zerocalcare.ttf");
 }
 
 @font-face {
 	font-family: Chivo;
-	src: url("fonts/Chivo-Regular.ttf");
+	src: url("../fonts/Chivo-Regular.ttf");
 }
 
 /*** MOBILE MENU ***/
