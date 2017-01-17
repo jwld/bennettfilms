@@ -404,8 +404,12 @@ p {
 	opacity: 0;
 }
 
+.videoButton:hover {
+	cursor: pointer;
+}
+
 .videoButton:hover .videoImage {
-	transform: scale(1.05);
+	transform: scale(1.025);
 }
 
 .videoImage {
@@ -441,7 +445,7 @@ p {
 	border: none;
 	background-color: black;
 	transition: 1s;
-	z-index: 2;
+	z-index: 3;
 }
 
 #drawingsWrap {
@@ -512,7 +516,34 @@ p {
 
 
 
+#videoChoiceBox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	
+	height: 100%;
+	width: 100%;
 
+	background-color: rgba(0, 0, 0, 0.75);
+	
+	transition: 0.2s;
+	opacity: 0;
+}
+
+.videoChoiceButton {
+	margin: 10px;
+	padding: 10px;
+	
+	border-radius: 5px;
+	font: 40px Zero;
+	color: #719698;
+	background-color: #d6d6d6;
+}
+
+.videoChoiceButton:hover {
+	background-color: #c6c6c6;
+}
 
 
 
@@ -586,6 +617,7 @@ p {
 
 #contactDetails {
 	flex-wrap: wrap;
+	max-width: 660px;
 }
 
 .contactInfo {
@@ -754,10 +786,7 @@ p {
 	#landingVideo {
 		display: none;
 	}
-	
-	
-	
-	
+		
 	.galleryButton {
 		display: none !important;
 	}
@@ -809,7 +838,7 @@ p {
 
 /*** BROWSER-SPECIFIC CSS ***/
 
-@-moz-document url-prefix() {   
+@-moz-document url-prefix() {
   	#subtitleText {
 		padding: 0.5vmin 2vmin 0 2vmin;
   	}

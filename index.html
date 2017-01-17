@@ -101,11 +101,15 @@
 				<div class="videoTitle">Showreel</div>
 				<iframe class="videoBox" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</button>
-			<button class="videoButton" onclick="playVideo('196574168', this)">
+			<div class="videoButton nteotw" onclick="showVideoOptions()">
 				<div class="videoImage" style="background-image: url('pics/thumbs/christmas.png');"></div>
 				<div class="videoTitle">Christmas Film 2o16</div>
 				<iframe class="videoBox" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			</button> 
+				<div id="videoChoiceBox">
+					<button class="videoChoiceButton" onclick="playVideo('192717554', 'nteotw')">CLIP</button>
+					<button class="videoChoiceButton" onclick="playVideo('198038409', 'nteotw')">FULL</button>
+				</div>
+			</div> 
 			<button class="videoButton" onclick="playVideo('192717554', this)">
 				<div class="videoImage" style="background-image: url('pics/thumbs/NTEOTW.jpg');"></div>
 				<div class="videoTitle">Not the End of the World</div>
@@ -254,6 +258,10 @@
 			<div class="contactGroup">
 				<div class="fa fa-phone-square contactIcon" style="font-size: 30px"></div>
 				<a class="contactInfo link" href="tel:+447815176520">+44 781 5176520</a>
+			</div>
+			<div class="contactGroup">
+				<div class="fa fa-file-pdf-o contactIcon" style="font-size: 30px"></div>
+				<a class="contactInfo link" href="CV.pdf">CV</a>
 			</div>
 		</div>
 	</div>
