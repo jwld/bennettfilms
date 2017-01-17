@@ -537,12 +537,12 @@ p {
 	
 	border-radius: 5px;
 	font: 40px Zero;
-	color: #719698;
-	background-color: #d6d6d6;
+	color: black;
+	background-color: white;
 }
 
 .videoChoiceButton:hover {
-	background-color: #c6c6c6;
+	background-color: #ddd;
 }
 
 
