@@ -538,11 +538,11 @@ p {
 	border-radius: 5px;
 	font: 40px Zero;
 	color: black;
-	background-color: white;
+	background-color: #f0f5f5;
 }
 
 .videoChoiceButton:hover {
-	background-color: #ddd;
+	background-color: #d1e0e0;
 }
 
 
