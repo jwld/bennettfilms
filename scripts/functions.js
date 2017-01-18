@@ -43,7 +43,7 @@ $(document).scroll(function() {
 function jumpTo(dest, mobile) {
 	if (dest !== null) {
 		var target = ".section." + dest;
-		$("body").animate({
+		$("html, body").animate({
 			scrollTop: $(target).offset().top - 60
 		}, 500);
 	}
