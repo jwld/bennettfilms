@@ -19,6 +19,10 @@ $(document).scroll(function() {
 		var scrollBottom = $(window).scrollTop() + $(window).height();
 
 		// fade section.about in
+		if (scrollBottom >= $(".section.about").offset().top + 200) {
+			$("#aboutSectionWrap").css("opacity", "1");
+		}
+
 // 		if (scrollBottom >= $(".section.about").offset().top + 200) {
 // 			$("#portrait").css("opacity", "1");
 // 			$("#portrait").css("margin", "10px 20px 10px 10px");
@@ -110,7 +114,6 @@ var currentPic = 0;
 var totalPics = 8;
 
 function changePic(dir) {
-
 	if (dir == 'next') {
 		currentPic = modulo(currentPic + 1, totalPics);
 	} else {

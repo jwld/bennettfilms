@@ -82,7 +82,7 @@ p {
 
 .ribbonIcon {
 	transform: rotate(-20deg);
-	margin: 3px;
+	margin: 3px 5px;
 }
 
 .ribbonIcon:hover {
@@ -263,6 +263,9 @@ p {
 #aboutSectionWrap {
 	flex-direction: column;
 	margin: 10px;
+	
+	transition: 0.5s;
+	opacity: 0;
 }
 
 #aboutTopWrap {
@@ -272,28 +275,18 @@ p {
 #portrait {
 	min-height: 300px;
 	min-width: 300px;
-/*	margin: 20px 200px 20px 20px;*/
 	margin: 0 20px 0 0;
 	
 	background-image: url("../pics/portrait.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	
-	transition: 0.5s;
-/*	opacity: 0;*/
-	opacity: 1;
 }
 
 #introWrap {
 	flex-direction: column;
 	max-width: 400px;
 	margin: 0 0 0 20px;
-	
-	transition: 0.5s;
-/*	opacity: 0;*/
-/*	margin-left: 190px;*/
-	opacity: 1;
 }
 
 #aboutText {
@@ -758,7 +751,7 @@ p {
 	}
 	
 	/* set default opacity */
-	#aboutText, .videoButton, .ref_box {
+	#aboutText, .videoButton, .ref_box, #aboutSectionWrap {
 		opacity: 1;
 	}
 	
