@@ -70,7 +70,7 @@ function playVideo(url, box) {
 	$(box.childNodes[5]).css("left", "0px");
 	setTimeout(function() {
 		$(box.childNodes[5]).attr("src", "https://player.vimeo.com/video/" + url + "?title=0&byline=0&portrait=0");
-	}, 1000);
+	}, 400);
 }
 
 // show choice of videos when required
