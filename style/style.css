@@ -372,6 +372,7 @@ p {
 .videoButton.showreel {
 	height: 300px;
 	width: 533px;
+	max-width: calc(100vw - 40px);
 }
 
 .videoImage {
@@ -730,7 +731,7 @@ p {
 
 /* maintain video aspect ratio when squashed */
 @media (max-width: 440px) {
-	.videoButton {
+	.videoButton, .videoButton.showreel {
 		height: calc((100vw - 40px) * 0.5625);
 	}
 }
@@ -770,9 +771,9 @@ p {
 
 /* firefox */
 @-moz-document url-prefix() {
-  	#subtitleText {
+	#subtitleText {
 		padding: 0.5vmin 2vmin 0 2vmin;
-  	}
+	}
 
 	.videoImage {
 		transform: scale(1.02);
