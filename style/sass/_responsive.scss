@@ -1,0 +1,86 @@
+/*** MOBILE & TABLET LAYOUT ***/
+
+@media (max-width: 1024px) {
+
+	/* deactivate */
+	#topRightRibbon, #topLeftRibbon, #landscapeLayout {
+		display: none;
+	}
+
+	/* activate */
+	#mobileMenuFull, #portraitLayout, .divider.about, .dividerTitle {
+		display: flex;
+	}
+
+	.ribbonIcon {
+		margin: 0 0 0 10px;
+	}
+
+	#headerBar {
+		position: fixed !important;
+	}
+
+	#portrait {
+		opacity: 1;
+		margin: 20px 0;
+	}
+
+	#introWrap {
+		margin: 0;
+	}
+
+	/* set default opacity */
+	#aboutText, .videoButton, .ref_box, #aboutSectionWrap {
+		opacity: 1;
+	}
+
+	.section.about, .section.work, .section.ref {
+		padding: 10px;
+	}
+
+	#landingVideo {
+		display: none;
+	}
+
+	.galleryButton {
+		display: none !important;
+	}
+
+	.innerGalleryButton {
+		display: inline !important;
+	}
+
+	#galleryTitle {
+		margin: 10px 0;
+	}
+}
+
+/* maintain video aspect ratio when squashed */
+@media (max-width: 440px) {
+	.videoButton, .videoButton.showreel {
+		height: calc((100vw - 40px) * 0.5625);
+	}
+}
+
+/* square box margins off below certain width */
+@media (max-width: 500px) {
+	.ref_box, #drawingsWrap {
+		margin: 10px;
+	}
+}
+
+/* adjust mobile menu font size below certain width */
+@media (max-width: 600px) {
+	.headerButton.mobile {
+		font: 13vw Zero;
+		margin: 5vw;
+	}
+}
+
+/* Adjust landing video so that it always covers screen */
+@media (min-aspect-ratio: 1670/887) {
+	#landingVideo {
+		height: auto;
+		width: 100%;
+	}
+}

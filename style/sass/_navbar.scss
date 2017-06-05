@@ -1,0 +1,21 @@
+#headerBar {
+	background-color: #111;
+	height: 60px;
+	width: 100vw;
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
+
+.headerButton {
+	height: 100%;
+	width: auto;
+	color: white;
+	font: 40px Zero;
+	background-color: transparent;
+	margin: 0 20px;
+}
+
+.headerButton:hover {
+	color: #f29787;
+}

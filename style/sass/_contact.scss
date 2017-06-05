@@ -1,0 +1,39 @@
+.section.contact {
+	height: auto;
+	padding: 10vw 10px;
+}
+
+#contactDetails {
+	flex-wrap: wrap;
+	max-width: 660px;
+}
+
+.contactInfo {
+	color: black;
+	font-family: Chivo;
+}
+
+.contactInfo.words {
+	font-size: 19px;
+	margin: 20px 10px;
+	background-color: #e6e6e6;
+	padding: 10px;
+}
+
+.contactInfo.link {
+	font-size: 25px;
+	z-index: 1;
+	margin-left: 12px;
+}
+
+.contactInfo.link:hover {
+	color: #f29787;
+}
+
+.contactGroup {
+	margin: 20px;
+}
+
+.contactIcon {
+	color: #719698;
+}

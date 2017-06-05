@@ -1,0 +1,23 @@
+{
+  "name": "bennettfilms",
+  "version": "1.0.0",
+  "description": "Animation portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "./node_modules/.bin/node-sass ./style/main.scss ./style/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JWLD/bennettfilms.git"
+  },
+  "author": "Jack Davies",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JWLD/bennettfilms/issues"
+  },
+  "homepage": "https://github.com/JWLD/bennettfilms#readme",
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  }
+}

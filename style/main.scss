@@ -1,0 +1,25 @@
+// general
+@import './sass/reset';
+@import './sass/fonts';
+@import './sass/browser';
+
+// partials
+@import './sass/ribbon';
+@import './sass/navbar';
+@import './sass/layout';
+@import './sass/footer';
+
+// sections
+@import './sass/landing';
+@import './sass/about';
+@import './sass/work';
+@import './sass/references';
+@import './sass/contact';
+
+// subsections
+@import './sass/blog';
+@import './sass/gallery';
+
+// responsive
+@import './sass/mobile';
+@import './sass/responsive';

@@ -1,0 +1,14 @@
+/* firefox */
+@-moz-document url-prefix() {
+	#subtitleText {
+		padding: 0.5vmin 2vmin 0 2vmin;
+	}
+
+	.videoImage {
+		transform: scale(1.02);
+	}
+
+	.videoButton:hover .videoImage {
+		transform: scale(1.08);
+	}
+}

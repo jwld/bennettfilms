@@ -1,0 +1,64 @@
+#drawingsWrap {
+	flex-direction: column;
+	margin: 3vw 10px 10px 10px;
+}
+
+#galleryTitle {
+	font: 40px Zero;
+	color: #719698;
+	margin-bottom: 20px;
+}
+
+#sketchWrap {
+	height: 300px;
+	width: 600px;
+	max-width: calc(100vw - 40px);
+	overflow: hidden;
+	background-color: #e6e6e6;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#imageGalleryWrap {
+	position: relative;
+}
+
+.galleryButton {
+	height: 50px;
+	width: 50px;
+	margin: 10px;
+	color: #719698;
+	background-color: #e6e6e6;
+	z-index: 1;
+	border-radius: 5px;
+}
+
+.galleryButton:hover {
+	background-color: #d6d6d6;
+}
+
+.innerGalleryButton {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	background-color: #e6e6e6;
+	color: #719698;
+	bottom: 0;
+	display: none !important;
+	border-top: 5px solid #f0f5f5;
+}
+
+.innerGalleryButton:hover {
+	background-color: #c6c6c6;
+}
+
+.innerGalleryButton.left {
+	left: 0;
+	border-right: 5px solid #f0f5f5;
+}
+
+.innerGalleryButton.right {
+	right: 0;
+	border-left: 5px solid #f0f5f5;
+}
