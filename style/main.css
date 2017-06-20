@@ -215,55 +215,6 @@ p {
   max-width: 400px;
   /* has to be px and not % for IE */ }
 
-#blogButton {
-  height: 30px;
-  width: 100%;
-  padding-top: 2px;
-  font: 30px Zero;
-  color: #719698;
-  background-color: #e6e6e6; }
-
-#blogButton:hover {
-  background-color: #d6d6d6; }
-
-#blogWrap {
-  flex-direction: column;
-  max-width: 740px;
-  overflow: hidden;
-  margin: 0;
-  height: 0; }
-
-.blogPost {
-  flex-direction: column;
-  margin-top: 20px;
-  font: 15px Chivo;
-  width: 100%; }
-
-.blogPost.top {
-  margin: 0;
-  border: 0; }
-
-.blogHeader {
-  width: 100%;
-  justify-content: space-between; }
-
-.blogDate {
-  width: 100px;
-  height: 10px;
-  padding: 5px;
-  font: 14px Chivo;
-  color: white;
-  background-color: #719698; }
-
-.blogDivider {
-  width: calc(100% - 100px);
-  height: 2px;
-  background-color: #e6e6e6; }
-
-.blogPost p {
-  margin: 10px 0 0 0;
-  width: 100%; }
-
 .section.work {
   height: auto; }
 
@@ -347,61 +298,6 @@ p {
 .videoChoiceButton:hover {
   background-color: #d1e0e0; }
 
-#drawingsWrap {
-  flex-direction: column;
-  margin: 3vw 10px 10px 10px; }
-
-#galleryTitle {
-  font: 40px Zero;
-  color: #719698;
-  margin-bottom: 20px; }
-
-#sketchWrap {
-  height: 300px;
-  width: 600px;
-  max-width: calc(100vw - 40px);
-  overflow: hidden;
-  background-color: #e6e6e6;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-#imageGalleryWrap {
-  position: relative; }
-
-.galleryButton {
-  height: 50px;
-  width: 50px;
-  margin: 10px;
-  color: #719698;
-  background-color: #e6e6e6;
-  z-index: 1;
-  border-radius: 5px; }
-
-.galleryButton:hover {
-  background-color: #d6d6d6; }
-
-.innerGalleryButton {
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  background-color: #e6e6e6;
-  color: #719698;
-  bottom: 0;
-  display: none !important;
-  border-top: 5px solid #f0f5f5; }
-
-.innerGalleryButton:hover {
-  background-color: #c6c6c6; }
-
-.innerGalleryButton.left {
-  left: 0;
-  border-right: 5px solid #f0f5f5; }
-
-.innerGalleryButton.right {
-  right: 0;
-  border-left: 5px solid #f0f5f5; }
-
 .section.ref {
   flex-direction: row;
   flex-wrap: wrap;
@@ -482,6 +378,129 @@ p {
 
 .contactIcon {
   color: #719698; }
+
+.awards-wrap {
+  justify-content: flex-start;
+  width: 100vw;
+  height: auto;
+  background-color: #e6e6e6;
+  box-sizing: border-box; }
+
+.awards-title {
+  font: 45px Zero;
+  color: #719698;
+  margin: 20px 0; }
+
+.laurel-wrap {
+  flex-wrap: wrap; }
+
+.laurel {
+  height: 150px;
+  margin: 0 15px 20px 15px; }
+
+#blogButton {
+  height: 30px;
+  width: 100%;
+  padding-top: 2px;
+  font: 30px Zero;
+  color: #719698;
+  background-color: #e6e6e6; }
+
+#blogButton:hover {
+  background-color: #d6d6d6; }
+
+#blogWrap {
+  flex-direction: column;
+  max-width: 740px;
+  overflow: hidden;
+  margin: 0;
+  height: 0; }
+
+.blogPost {
+  flex-direction: column;
+  margin-top: 20px;
+  font: 15px Chivo;
+  width: 100%; }
+
+.blogPost.top {
+  margin: 0;
+  border: 0; }
+
+.blogHeader {
+  width: 100%;
+  justify-content: space-between; }
+
+.blogDate {
+  width: 100px;
+  height: 10px;
+  padding: 5px;
+  font: 14px Chivo;
+  color: white;
+  background-color: #719698; }
+
+.blogDivider {
+  width: calc(100% - 100px);
+  height: 2px;
+  background-color: #e6e6e6; }
+
+.blogPost p {
+  margin: 10px 0 0 0;
+  width: 100%; }
+
+#drawingsWrap {
+  flex-direction: column;
+  margin: 3vw 10px 10px 10px; }
+
+#galleryTitle {
+  font: 40px Zero;
+  color: #719698;
+  margin-bottom: 20px; }
+
+#sketchWrap {
+  height: 300px;
+  width: 600px;
+  max-width: calc(100vw - 40px);
+  overflow: hidden;
+  background-color: #e6e6e6;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#imageGalleryWrap {
+  position: relative; }
+
+.galleryButton {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  color: #719698;
+  background-color: #e6e6e6;
+  z-index: 1;
+  border-radius: 5px; }
+
+.galleryButton:hover {
+  background-color: #d6d6d6; }
+
+.innerGalleryButton {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: #e6e6e6;
+  color: #719698;
+  bottom: 0;
+  display: none !important;
+  border-top: 5px solid #f0f5f5; }
+
+.innerGalleryButton:hover {
+  background-color: #c6c6c6; }
+
+.innerGalleryButton.left {
+  left: 0;
+  border-right: 5px solid #f0f5f5; }
+
+.innerGalleryButton.right {
+  right: 0;
+  border-left: 5px solid #f0f5f5; }
 
 #portraitLayout {
   display: none;

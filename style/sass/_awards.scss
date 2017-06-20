@@ -1,14 +1,22 @@
 .awards-wrap {
 	justify-content: flex-start;
 	width: 100vw;
-	height: 150px;
+	height: auto;
 	background-color: #e6e6e6;
-	padding: 20px 5px;
 	box-sizing: border-box;
-	overflow: scroll;
+}
+
+.awards-title {
+	font: 45px Zero;
+	color: #719698;
+	margin: 20px 0;
+}
+
+.laurel-wrap {
+	flex-wrap: wrap;
 }
 
 .laurel {
-	height: 100%;
-	margin: 0 15px;
+	height: 150px;
+	margin: 0 15px 20px 15px;
 }

@@ -23,14 +23,6 @@ $(document).scroll(function() {
 			$("#aboutSectionWrap").css("opacity", "1");
 		}
 
-// 		if (scrollBottom >= $(".section.about").offset().top + 200) {
-// 			$("#portrait").css("opacity", "1");
-// 			$("#portrait").css("margin", "10px 20px 10px 10px");
-//
-// 			$("#introWrap").css("opacity", "1");
-// 			$("#introWrap").css("margin-left", 0);
-// 		}
-
 		// fade section.work in
 		if (scrollBottom >= $(".section.work").offset().top + 200) {
 			$(".videoButton").css("opacity", "1");
@@ -101,7 +93,7 @@ function toggleBlog() {
 	if ($("#blogWrap").css("height") == "0px") {
 		$("#blogWrap").css("height", "auto");
 		$("#blogWrap").css("margin-top", "30px");
-		$("#blogButton").html("CLOSE BLOG");
+		$("#blogButton").html("HIDE BLOG");
 	} else {
 		$("#blogWrap").css("height", 0);
 		$("#blogWrap").css("margin", 0);
