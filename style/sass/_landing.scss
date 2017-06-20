@@ -1,0 +1,47 @@
+.section.top {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	padding: 0;
+	justify-content: center;
+	background-image: url("../pics/landing1.png");
+	background-size: cover;
+	background-position: center bottom;
+}
+
+#notHeader {
+	position: relative;
+	flex-grow: 1;
+	width: 100%;
+	overflow: hidden;
+	flex-direction: column;
+	z-index: 2;
+}
+
+#titleText {
+	color: #111;
+	font: 30vmin Zero;
+	line-height: 17vmin;
+	padding: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#subtitleText {
+	color: white;
+	font: 10vmin Zero;
+	background-color: #111;
+	padding: 2vmin 2vmin 1.5vmin 2vmin;
+	transform: rotate(5deg);
+	text-align: center;
+	margin-top: 20px;
+}
+
+#landingVideo {
+	position: absolute;
+	height: calc(100% - 50px);
+	bottom: 50px;
+	left: 0;
+	z-index: 1;
+	background-color: #f0f5f5;
+}

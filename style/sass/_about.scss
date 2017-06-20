@@ -1,0 +1,46 @@
+.section.about {
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: auto;
+}
+
+#aboutSectionWrap {
+	flex-direction: column;
+	margin: 10px;
+	transition: 0.5s;
+	opacity: 0;
+}
+
+#aboutTopWrap {
+	flex-wrap: wrap;
+}
+
+#portrait {
+	min-height: 300px;
+	min-width: 300px;
+	margin: 0 20px 0 0;
+
+	background-image: url("../pics/portrait.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#introWrap {
+	flex-direction: column;
+	max-width: 400px;
+	margin: 0 0 0 20px;
+}
+
+#aboutText {
+	color: black;
+	max-width: 100%;
+	margin: 10px;
+	box-sizing: border-box;
+	font: 15px Chivo;
+	margin: 0 0 10px 0;
+}
+
+#aboutText p {
+	max-width: 400px; /* has to be px and not % for IE */
+}

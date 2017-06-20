@@ -1,0 +1,44 @@
+#topLeftRibbon {
+	position: fixed;
+	top: -100px;
+	left: -170px;
+	z-index: 11;
+	height: 50px;
+	width: 500px;
+	transform: rotate(-20deg);
+	padding: 10px;
+	color: white;
+	background-color: #222;
+	font: 35px Zero;
+	transition: top 0.2s;
+}
+
+#topLeftRibbon:hover {
+	color: #f29787;
+}
+
+#topRightRibbon {
+	position: fixed;
+	top: 20px;
+	right: -160px;
+	z-index: 11;
+	width: 500px;
+	transform: rotate(20deg);
+	padding: 10px;
+	color: white;
+	background-color: #222;
+	transition: 0.2s;
+}
+
+#topRightRibbon:hover {
+	cursor: auto;
+}
+
+.ribbonIcon {
+	transform: rotate(-20deg);
+	margin: 3px 5px;
+}
+
+.ribbonIcon:hover {
+	color: #f29787;
+}

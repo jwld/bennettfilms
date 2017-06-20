@@ -1,0 +1,22 @@
+.section {
+	flex-direction: column;
+	height: calc(100vh - 60px);
+	background-color: #f0f5f5;
+	padding: 3vw 10px;
+}
+
+.divider {
+	width: 100vw;
+	height: 60px;
+	font: 40px Zero;
+	color: white;
+	background-color: #111;
+}
+
+.divider.about {
+	display: none;
+}
+
+.dividerTitle {
+	display: none;
+}

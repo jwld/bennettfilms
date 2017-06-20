@@ -1,0 +1,22 @@
+.awards-wrap {
+	justify-content: flex-start;
+	width: 100vw;
+	height: auto;
+	background-color: #e6e6e6;
+	box-sizing: border-box;
+}
+
+.awards-title {
+	font: 45px Zero;
+	color: #719698;
+	margin: 20px 0;
+}
+
+.laurel-wrap {
+	flex-wrap: wrap;
+}
+
+.laurel {
+	height: 150px;
+	margin: 0 15px 20px 15px;
+}

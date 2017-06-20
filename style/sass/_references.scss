@@ -1,0 +1,55 @@
+.section.ref {
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: auto;
+	align-items: flex-start;
+}
+
+.ref_box {
+	flex-direction: column;
+	max-width: 330px;
+	padding: 17px 17px 11px 17px;
+	margin: 10px 20px;
+	font: 15px Chivo;
+	justify-content: flex-start;
+	background-color: #e6e6e6;
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.nameWrap {
+	background-color: #719698;
+	transform: rotate(2deg);
+	padding: 7px;
+	margin: 5px 0 -5px 0;
+}
+
+.ref_name {
+	font: 25px Chivo;
+	transform: rotate(-2deg);
+	color: white;
+}
+
+.roleWrap {
+	background-color: #444;
+	padding: 5px;
+	z-index: 1;
+	transform: rotate(-1deg);
+}
+
+.ref_role {
+	font: 15px Chivo;
+	color: white;
+}
+
+.ref_quote {
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 20px 0 0 0;
+	color: black;
+	max-width: 100%;
+}
+
+.ref_quote p {
+	max-width: 330px; /* has to be px and not % for IE */
+}
