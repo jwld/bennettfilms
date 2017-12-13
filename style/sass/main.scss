@@ -1,0 +1,26 @@
+// general
+@import './reset';
+@import './fonts';
+@import './browser';
+@import './general';
+
+// partials
+@import './partials/ribbon';
+@import './partials/navbar';
+@import './partials/footer';
+
+// sections
+@import './sections/landing';
+@import './sections/about';
+@import './sections/work';
+@import './sections/awards';
+@import './sections/references';
+@import './sections/contact';
+
+// subsections
+@import './subsections/blog';
+@import './subsections/gallery';
+
+// responsive
+@import './responsive/mobile';
+@import './responsive/responsive';

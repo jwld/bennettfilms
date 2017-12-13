@@ -4,8 +4,9 @@
   "description": "Animation portfolio website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "./node_modules/.bin/node-sass ./style/main.scss ./style/main.css"
+    "dev": "npm run sass",
+    "sass": "./node_modules/.bin/node-sass ./style/sass/main.scss ./style/main.css & npm run sass:watch",
+    "sass:watch": "./node_modules/.bin/node-sass --watch ./style/sass/main.scss ./style/main.css"
   },
   "repository": {
     "type": "git",
