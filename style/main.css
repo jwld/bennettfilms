@@ -45,6 +45,25 @@ p {
   .videoButton:hover .videoImage {
     transform: scale(1.08); } }
 
+.section {
+  flex-direction: column;
+  height: calc(100vh - 60px);
+  background-color: #f0f5f5;
+  padding: 3vw 10px; }
+
+.divider {
+  width: 100vw;
+  height: 60px;
+  font: 40px Zero;
+  color: white;
+  background-color: #111; }
+
+.divider.about {
+  display: none; }
+
+.dividerTitle {
+  display: none; }
+
 #topLeftRibbon {
   position: fixed;
   top: -100px;
@@ -102,25 +121,6 @@ p {
 
 .headerButton:hover {
   color: #f29787; }
-
-.section {
-  flex-direction: column;
-  height: calc(100vh - 60px);
-  background-color: #f0f5f5;
-  padding: 3vw 10px; }
-
-.divider {
-  width: 100vw;
-  height: 60px;
-  font: 40px Zero;
-  color: white;
-  background-color: #111; }
-
-.divider.about {
-  display: none; }
-
-.dividerTitle {
-  display: none; }
 
 .footer {
   color: white;
@@ -298,6 +298,26 @@ p {
 .videoChoiceButton:hover {
   background-color: #d1e0e0; }
 
+.awards-wrap {
+  justify-content: flex-start;
+  width: 100vw;
+  height: auto;
+  background-color: #e6e6e6;
+  box-sizing: border-box; }
+
+.awards-title {
+  font: 45px Zero;
+  color: #719698;
+  margin: 20px 0; }
+
+.laurel-wrap {
+  flex-wrap: wrap;
+  max-width: 100%; }
+
+.laurel {
+  height: 150px;
+  margin: 0 15px 20px 15px; }
+
 .section.ref {
   flex-direction: row;
   flex-wrap: wrap;
@@ -378,25 +398,6 @@ p {
 
 .contactIcon {
   color: #719698; }
-
-.awards-wrap {
-  justify-content: flex-start;
-  width: 100vw;
-  height: auto;
-  background-color: #e6e6e6;
-  box-sizing: border-box; }
-
-.awards-title {
-  font: 45px Zero;
-  color: #719698;
-  margin: 20px 0; }
-
-.laurel-wrap {
-  flex-wrap: wrap; }
-
-.laurel {
-  height: 150px;
-  margin: 0 15px 20px 15px; }
 
 #blogButton {
   height: 30px;
