@@ -22,7 +22,7 @@ a {
   color: white; }
 
 a:hover {
-  color: #f29787;
+  color: #eb6750;
   cursor: pointer; }
 
 p {
@@ -79,7 +79,7 @@ p {
   transition: top 0.2s; }
 
 #topLeftRibbon:hover {
-  color: #f29787; }
+  color: #eb6750; }
 
 #topRightRibbon {
   position: fixed;
@@ -101,7 +101,7 @@ p {
   margin: 3px 5px; }
 
 .ribbonIcon:hover {
-  color: #f29787; }
+  color: #eb6750; }
 
 #headerBar {
   background-color: #111;
@@ -120,7 +120,7 @@ p {
   margin: 0 20px; }
 
 .headerButton:hover {
-  color: #f29787; }
+  color: #eb6750; }
 
 .footer {
   color: white;
