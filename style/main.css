@@ -154,7 +154,7 @@ p {
   color: #111;
   font: 20vmin Zero;
   line-height: 17vmin;
-  padding: 20px;
+  padding: 25px;
   text-align: center;
   margin-bottom: 20px; }
 
@@ -173,7 +173,7 @@ p {
   bottom: 50px;
   left: 0;
   z-index: 1;
-  background-color: #f0f5f5; }
+  background-color: #ffffff; }
 
 .section.about {
   flex-direction: column;
