@@ -48,7 +48,7 @@ p {
 .section {
   flex-direction: column;
   height: calc(100vh - 60px);
-  background-color: #f0f5f5;
+  background-color: #FFFFFF;
   padding: 3vw 10px; }
 
 .divider {
@@ -152,7 +152,7 @@ p {
 
 #titleText {
   color: #111;
-  font: 30vmin Zero;
+  font: 28vmin Zero;
   line-height: 17vmin;
   padding: 20px;
   text-align: center;
