@@ -35,6 +35,10 @@ p {
 @font-face {
   font-family: Chivo;
   src: url("../fonts/Chivo-Regular.ttf"); }
+  
+  @font-face {
+    font-family: KG;
+    src: url("../fonts/KGHAPPY_solid.ttf"); }
 
 /* firefox */
 @-moz-document url-prefix() {
