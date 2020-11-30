@@ -151,8 +151,8 @@ p {
   z-index: 2; }
 
 #titleText {
-  color: #F7F1DE;
-  font: 22vmin Zero;
+  color: #111;
+  font: 22vmin KG;
   line-height: 17vmin;
   padding: 50px;
   text-align: center;
