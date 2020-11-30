@@ -253,16 +253,6 @@ p {
   background-repeat: no-repeat;
   background-position: center; }
 
-.videoTitle {
-  position: absolute;
-  left: 0;
-  top: 40%;
-  width: 100%;
-  height: 20%;
-  color: white;
-  font: 40px Zero;
-  z-index: 2; }
-
 .videoBox {
   position: absolute;
   top: 0;
