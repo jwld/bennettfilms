@@ -36,9 +36,13 @@ p {
   font-family: Chivo;
   src: url("../fonts/Chivo-Regular.ttf"); }
   
-  @font-face {
+@font-face {
     font-family: KG;
     src: url("../fonts/KGHAPPY_solid.ttf"); }
+	
+@font-face {
+      font-family: Nord;
+      src: url("../fonts/Nord Regular.otf"); }
 
 /* firefox */
 @-moz-document url-prefix() {
@@ -212,7 +216,7 @@ p {
   max-width: 100%;
   margin: 10px;
   box-sizing: border-box;
-  font: 15px Chivo;
+  font: 15px Nord;
   margin: 0 0 10px 0; }
 
 #aboutText p {
