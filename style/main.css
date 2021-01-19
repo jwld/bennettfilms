@@ -198,8 +198,8 @@ p {
   flex-wrap: wrap; }
 
 #portrait {
-  min-height: 300px;
-  min-width: 300px;
+  min-height: 500px;
+  min-width: 500px;
   margin: 0 20px 0 0;
   background-image: url("../pics/JACKLOGO_V3.png");
   background-position: center;
