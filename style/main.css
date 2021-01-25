@@ -159,7 +159,7 @@ p {
   z-index: 2; }
 
 #titleText {
-  color: #94F7D7;
+  color: #111111;
   font: 10vmin KG;
   line-height: 17vmin;
   padding: 50px;
@@ -167,7 +167,7 @@ p {
   margin-bottom: 20px; }
 
 #subtitleText {
-  color: white;
+  color: black;
   font: 8vmin Zero;
   background-color: #94F7D7;
   padding: 2vmin 2vmin 1.5vmin 2vmin;
